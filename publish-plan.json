@@ -1,0 +1,158 @@
+{
+  "schema": 1,
+  "tag": "beta-2.0.7.9.9",
+  "title": "Drift Coach \u2014 Beta Version 2.0 (build 7.9.9)",
+  "assets": [
+    {
+      "name": "Gridworks-Drift-Coach-Beta-2.0.zip",
+      "bytes": 24516453,
+      "sha256": "f1ee02f453051f39edaa52f37aa42c736fb73f0212d1f18d0cc5534e090c712f",
+      "chunks": [
+        {
+          "git_blob": "ecb476b4c43e70c939a5823a976f25d44ccb0dfd",
+          "bytes": 1048576,
+          "sha256": "d844950bc770d5efd4c4d81459a7c734430126482aae17be1daed0579804ef62"
+        },
+        {
+          "git_blob": "7028f2035eec9b79b42003379ad1ab776198bf3a",
+          "bytes": 1048576,
+          "sha256": "1d397f4cb39c014afd1188741492645a59134241c824becc72cc4d85a090da51"
+        },
+        {
+          "git_blob": "3ba45f35843b718d30023b938da5245269a13b0b",
+          "bytes": 1048576,
+          "sha256": "a605c2165386bf04f7ba05670dd6fd781a252f49b8d3aea7d119f6ba804c5103"
+        },
+        {
+          "git_blob": "09a7a9748e69e19367b441628204189f215dbf25",
+          "bytes": 1048576,
+          "sha256": "a67e6278a1119426c55a06da4ddcc6bb56abaea72829ca71b41f5c327566dc2b"
+        },
+        {
+          "git_blob": "0d59254c9011342cf20aaa07af55665c54ea2fd6",
+          "bytes": 1048576,
+          "sha256": "863fcbf3c2c224ee6aaf0f9b5a10b099969f3f3eb2c22df1c3e8a4ca4596bc67"
+        },
+        {
+          "git_blob": "1b85ced8031a28569d7d59fda56cd5126de5bcd9",
+          "bytes": 1048576,
+          "sha256": "907f0ec63a9f19d2b8f57ba40aaa965b65045f394c16fc2d04a0b3e7bb21e99f"
+        },
+        {
+          "git_blob": "b20a54d0c59cb21940dca4e6c7f59bfe479ddd33",
+          "bytes": 1048576,
+          "sha256": "aa92f45fae10ee70cdfa6bd3c0698542e71a794447d77b50b24f778a62a3dccf"
+        },
+        {
+          "git_blob": "8a2fe340c0b317375961dfadd6b922d6c67efeea",
+          "bytes": 1048576,
+          "sha256": "a5d34ccdf822f19a218b842859e081073d1e955ac6000555eae18f716da2ced6"
+        },
+        {
+          "git_blob": "48d72508bcb685475f2025e45b2002c8c6ea06b5",
+          "bytes": 1048576,
+          "sha256": "fb8e95529292450927b91803670e64311ca14a291e4bdfe3bf9243fce51b40a2"
+        },
+        {
+          "git_blob": "577bdc4ce7c3eb987315efbe83642cce1c5e6dfa",
+          "bytes": 1048576,
+          "sha256": "574a3a79c50356e8af7f4190104e2ce82b2a97f8aea02ac22ad58225f65d31bc"
+        },
+        {
+          "git_blob": "eb9281e04c3837f6415812276239afdcf120723e",
+          "bytes": 1048576,
+          "sha256": "f78a1da9aad659efe710acb9aec6fb3d72e5902446d4ebe18a57ba12edb1a5de"
+        },
+        {
+          "git_blob": "3f3cc8a902930dfcd241a8bf23b32cd467eb7870",
+          "bytes": 1048576,
+          "sha256": "4a1c23c82f403552bdb8bd4b8c7da76b65029363b5b4cedf3eb271619155e849"
+        },
+        {
+          "git_blob": "8e33b931509f8709bb8887f18220c8c95ce6ed6f",
+          "bytes": 1048576,
+          "sha256": "7d119263e5fd394c60fb7ceb804ffb695d7306c8a552c5ab2908230eefa5080b"
+        },
+        {
+          "git_blob": "252c6a50f4d05694a0fc15346835198e507f02ed",
+          "bytes": 1048576,
+          "sha256": "ecebc6cf37c56f69ee49efb103e6cdf2e051b02e515706be7ca19314d292e35b"
+        },
+        {
+          "git_blob": "27faea02888a98a9fa16b538996f9643cc9595a0",
+          "bytes": 1048576,
+          "sha256": "26dcaa0fd93535dddbcc2fc048f4c390125758af6011a02e9aa0d63ec25670a7"
+        },
+        {
+          "git_blob": "9c90d274ecae18dbdbcda0daa7f60ca753daf5cd",
+          "bytes": 1048576,
+          "sha256": "3a7682198f7f1cc50d2dd737f44190c21ad2b9cbcfc3414c1a17012ca83b69bf"
+        },
+        {
+          "git_blob": "3424feac88c543911bc3899d770eeda705aa8817",
+          "bytes": 1048576,
+          "sha256": "1c76232ad99c4dd7bf073aca081d5f963620c6af906555e3d422ea49425d66aa"
+        },
+        {
+          "git_blob": "296bc7b58f7b1e6b9a87a98288a006447229bb50",
+          "bytes": 1048576,
+          "sha256": "a9088b109ab96440e983702fd91d564113f49d09bcc1691872b85a17c25a4670"
+        },
+        {
+          "git_blob": "faef1543b434beeb75eed8ec96d1dba967763e1c",
+          "bytes": 1048576,
+          "sha256": "024559ed316a6ea5884440d0a9276d4535e6df9825f318bc3260abf3d7c3bdb2"
+        },
+        {
+          "git_blob": "4634fa7ec1bbb5eeac5f9b5a5956601adb6bb2fd",
+          "bytes": 1048576,
+          "sha256": "b52a8910d1fafc8022f0b52de6e31de282f15d4b84b8ed66738c25bfa2174b42"
+        },
+        {
+          "git_blob": "fa1143b26e0e8ddd1305674175ceb728b1647d04",
+          "bytes": 1048576,
+          "sha256": "b6f67027061b9f605aafe09900290df67a5b763f25ae738f1c64819d50d0f6e5"
+        },
+        {
+          "git_blob": "f058436ff83998f99ae929b81e359aa8e8a8ceb4",
+          "bytes": 1048576,
+          "sha256": "47f9d4bed186e98c793124a0ccbd78108d323eb958b5d3e6e36dde42399d28b1"
+        },
+        {
+          "git_blob": "118edea7aa472f37370190d12357184a5483509c",
+          "bytes": 1048576,
+          "sha256": "2630764c6333f69c06076865d36a063cf173520cbd36eb594e937a4fabd98a52"
+        },
+        {
+          "git_blob": "75a6c2dfc303e5d67896efa6b43facf8e2449ae8",
+          "bytes": 399205,
+          "sha256": "a473960dad774367c5e2a6d1c5542873178e6c13ad62974b1ff84ef878fa5fb9"
+        }
+      ]
+    },
+    {
+      "name": "Gridworks-Small-Update-7.9.9.zip",
+      "bytes": 167591,
+      "sha256": "00aebf3ffe22dac1f4e7a77f6af2488a40d8b464e9a6947be240dde9479a62d7",
+      "chunks": [
+        {
+          "git_blob": "d83e1be9bc55b6f71e070372c856f1da5e662ab5",
+          "bytes": 167591,
+          "sha256": "00aebf3ffe22dac1f4e7a77f6af2488a40d8b464e9a6947be240dde9479a62d7"
+        }
+      ]
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 200,
+      "sha256": "df08cfd8a914d25e31deafc28f97a90ad3d602033b0e48d7b61ebf4e3f0d8c69",
+      "chunks": [
+        {
+          "git_blob": "86b808e59c53284741e1b5fb87d96c53843869fb",
+          "bytes": 200,
+          "sha256": "df08cfd8a914d25e31deafc28f97a90ad3d602033b0e48d7b61ebf4e3f0d8c69"
+        }
+      ]
+    }
+  ]
+}
