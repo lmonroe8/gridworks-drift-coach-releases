@@ -1,37 +1,35 @@
 ## Drift Coach — Beta Version 2.0
 
-**Build 7.10.0 · Windows / original Assetto Corsa**
+**Build 7.10.1 · Windows / original Assetto Corsa**
 
 ### Install or update
 
-- **New user:** download **Gridworks-Drift-Coach-Beta-2.0.zip** (about 25.5 MB), extract it, open **START-HERE.html**, then run **Gridworks-Setup.exe**.
-- **On 7.9.9 with the beta channel:** use **App Updates → Check → Download**, finish driving and choose **Restart to update**. The patch is about 1.1 MB.
-- **On 7.9.7, 7.9.8, or needing an offline upgrade:** download **Gridworks-Small-Update-7.10.0.zip** (about 3.2 MB). Finish driving, close Assetto Corsa, extract it and run **Update-Gridworks.cmd**. Keep its files together.
-- You need **Assetto Corsa, Content Manager, CSP and SimHub**. The app includes its private Python runtime. Stream Deck, OBS and a tablet are optional.
+- **On 7.10.0:** open **App Updates**, check for the update, then **Restart to update** after driving. The changed-file patch is about 130 KB. Native dashboards and Stream Deck exports are byte-identical to 7.10.0; no reimport is needed.
+- **On 7.9.9:** use App Updates or the small upgrade below. This patch also includes the 7.10.0 coaching tools. For their optional native features, import Angle Coach 1.2 and run Coach Tools from Bundled downloads once.
+- **Offline upgrade from 7.9.9/7.10.0:** extract **Gridworks-Small-Update-7.10.1.zip**, close Assetto Corsa and run **Update-Gridworks.cmd**. Keep the files together. Your installed runtime and saved data are reused.
+- **New user or older build:** extract **Gridworks-Drift-Coach-Beta-2.0.zip**, read **START-HERE.html** and run **Gridworks-Setup.exe**. The download has exactly those two files.
+- You need **original Assetto Corsa, Content Manager, CSP and SimHub**. Stream Deck, OBS and a tablet are optional. Python is included privately with the app.
 
-### New in this build
+### Fixed controls and clearer pages
 
-1. **Ready:** first-launch connection checks and fixes, distinguishing live acknowledgements from found files.
-2. **Recorded-path replay:** play, scrub and inspect your driven path together with angle, speed, steering and pedals. Path data is used when recorded; no circuit boundaries are invented.
-3. **Keep / Review / Practice:** evidence-led debriefs, event jumps, trace-quality labels and practice goals with progress.
-4. **Matched setup experiments:** inspect one-change comparisons, entry/tire/road conditions and confirmed-versus-selected setup provenance. Observations do not prove a setup cause.
-5. **Pit screen:** paired tablet access, automatic driving/last-run/setup pages, manual lock, quiet coaching and setup checklists.
-6. **Separate Coach Tools XL profile:** highlight, bookmark, last run, setup test, quiet mode, practice, readiness and pit controls, plus eight OBS controls. The original profile and artwork are retained. Highlights save an already running OBS Replay Buffer and link its confirmed filename; no streaming or recording starts automatically.
-7. **Clearer pages:** stronger black/red/white/gold hierarchy, focused review cards and a large tablet driving display.
-8. **Data and performance tools:** run names/notes/favorites/search, validated backup preview/restore, conflict choices, safety backups and reviewed diagnostics. Balanced/low display modes pause hidden-tab work.
+Saved-result links, Profile Best and the Pit screen now open the selected archived run. Paired tablets can open read-only run breakdowns and return to Pit; administrative commands remain on the gaming PC. Action errors appear visibly. The duplicate live recap and second setup-comparison card have been removed; each selected run and setup experiment has one review.
 
-### Optional component step after an app update
+### Individual transition and range breakdown
 
-From **Dash settings → Bundled downloads**, import **Angle Coach 1.2** once for Quiet Coach support. For the new Stream Deck actions, download **Coach Tools**, extract it and run **Install-Coach-Tools.cmd** once. It backs up the old plugin, restarts Stream Deck and imports the separate Coach Tools XL profile; OBS stays running and existing profiles are kept.
+Run review has **Overview**, **Transitions**, **Sections & range**, **Driver inputs** and **Notes & video** tabs. Select a confirmed direction change to inspect threshold-to-threshold time, signed entry/exit angles, speed change, throttle/brake/clutch use and time to regain the target. Short sign chatter and crossings over missing-data gaps are excluded.
 
-App patches update the app, help and bundled exports. Installed SimHub components, game links, Stream Deck plugins and runtime changes have their own installation/import paths. Profiles, setups, run records and the original runtime are preserved by this upgrade.
+Sections follow measured direction changes. Select a phase or mark an arbitrary start/end time to measure it, zoom the trace and loop the replay. Metrics are weighted by observed time; gaps over 300 ms are excluded. Recorded traces normally sample every 100 ms, so timing is an estimate at that resolution. Handbrake input is not inferred. Existing traces can be analyzed without re-recording; summary-only legacy records remain limited.
+
+### Scoring sources
+
+**Gridworks training** now works directly from qualifying saved telemetry. Its personal practice index is **60% angle control + 40% continuity**, with component percentages and weighted contributions visible in each run. Missing, interrupted, truncated or insufficient-coverage traces are not rated. Compare the same car, route, compound and training profile. This is not competition judging; line, clipping zones and proximity are not scored.
+
+**Damgam points** stays separate and retains its original calculations. Gridworks identifies missing, invalid, stopped, frozen and other-layout exports, reloads changed configuration and recovers a live export in the connected game folder even if an old folder still exists. Keep **Drift Score Display** running inside Assetto Corsa; use **Recheck Damgam link** after fixing it. A custom unsupported scorer is not silently overwritten.
 
 ### Validation and feedback
 
-187 local Python checks, eight update-interface scenarios, 36 angle-overlay scenarios, native Stream Deck asset checks and the installer harness passed. Real Chromium covers the new screens plus 27 existing regressions. All three signed upgrades reconstructed the 67-file target App inventory and preserved saved-data fixtures. The 10,000-run performance fixture measures controller work, not game FPS.
+223 Python checks, eight update-interface scenarios and 52 actual Chromium scenarios cover app behavior, measurements, scoring, source separation, selected-range replay, setup tools and paired-tablet access. Installer staging/worker/launcher and native export checks also passed. Both signed upgrades reconstruct all 69 target App files while preserving saved-data fixtures, the existing runtime and the previous app version.
 
-Live Windows installation, SimHub/AC rendering, OBS, tablet LAN access and physical Stream Deck behavior still need beta rig confirmation. Setup guides are starting points; no VDC driver reference runs are bundled.
+These are automated and protocol fixtures. Live AC/CSP, SimHub/OBS, physical devices and a real Windows install still need beta rig confirmation.
 
-Please [report a bug or your tester experience](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose) with your build, AC/CSP/SimHub versions and reproduction steps. Public downloads and update checks do not require a GitHub account.
-
-Use the named assets below. GitHub's automatic **Source code** archives contain this release-channel repository, not the app installer. **SHA256SUMS.txt** records the download checksums.
+[Report a problem or share your tester experience](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include your build, AC/CSP/SimHub versions, which control you clicked and what happened. Use the named release assets; GitHub's automatic Source code downloads contain the release-channel repository, not the app installer.

@@ -1,6 +1,6 @@
 # Gridworks Drift Coach
 
-**Beta Version 2.0 · build 7.10.0**
+**Beta Version 2.0 · build 7.10.1**
 
 Local Assetto Corsa drift coaching, car/setup tools, individual run review, native SimHub dashboards and a compact Angle Coach overlay.
 
@@ -11,7 +11,7 @@ Open [Releases](https://github.com/lmonroe8/gridworks-drift-coach-releases/relea
 | File | Use |
 | --- | --- |
 | **Gridworks-Drift-Coach-Beta-2.0.zip** | New installation: extract and run **Gridworks-Setup.exe**. The ZIP contains the installer and Start Here guide. |
-| **Gridworks-Small-Update-7.10.0.zip** | Existing builds **7.9.7, 7.9.8 or 7.9.9**: extract and run **Update-Gridworks.cmd** after finishing your session. Reuses the installed runtime. |
+| **Gridworks-Small-Update-7.10.1.zip** | Existing builds **7.9.9 or 7.10.0**: extract and run **Update-Gridworks.cmd** after finishing your session. Reuses the installed runtime. |
 
 Use the named release assets. GitHub's automatically generated **Source code** archives contain the release-channel repository, not the Gridworks app.
 
@@ -27,6 +27,8 @@ Follow the included **START-HERE.html**. After installing, use the **Gridworks D
 
 - **Angle Coach:** 360 × 108 native click-through overlay showing live absolute drift angle, saved car target and **ADD ANGLE / IN TARGET / REDUCE ANGLE**. Use AC windowed/borderless mode for SimHub overlays.
 - **Setup Lab:** six starting guides, baseline/revision tools and setup import/export. Guides are tuning starting points, not proven competition-driver setups.
+- **Training & points:** Gridworks calculates a transparent practice index from saved traces (60% angle control, 40% continuity). Original Damgam points stay on their own tab with missing/stale/layout diagnostics and recovery when the game folder moved.
+- **Detailed run review:** select each confirmed transition for timing, entry/exit angle, speed change, pedal use and recovery. Inspect direction-based phases or any custom time range, then loop that part of the replay.
 - **Run replay:** individual recordings grouped by car, track and layout, synchronized driven path, speed, angle and pedal timeline; playback speed and event jumps. Runs shorter than ten seconds are discarded. Add names, notes, favorites and search.
 - **Ready check:** first-launch connection status for the controller, AC, fresh packets, angle, SimHub, CSP, car library and direct setup evidence, with relevant next steps.
 - **Keep / Review / Practice:** trace-quality labels, recorded observations and one practice goal. Explanations remain hypotheses; there is no invented competition score.
@@ -36,9 +38,9 @@ Follow the included **START-HERE.html**. After installing, use the **Gridworks D
 - **Data tools:** previewed backup/restore with conflict choices and a safety backup; reviewed diagnostics; balanced/low display settings and hidden-tab pause.
 - **Reference Lab:** optional recorded-run comparison with declared provenance. Demo examples are synthetic; no VDC driver reference data is included.
 - **Support Message:** prepare a message with optional reviewed app details, then copy/download it for your tester conversation.
-- **App updates:** the public signed beta feed is preset in build 7.10.0. Routine app patches download in the background; finish driving and choose **Restart to update**. Saved profiles, setups and recordings stay in place.
+- **App updates:** the public signed beta feed is preset in build 7.10.1. Routine app patches download in the background; finish driving and choose **Restart to update**. Saved profiles, setups and recordings stay in place.
 
-App patches update the app, help and bundled exports. For this build, import **Angle Coach 1.2** once for Quiet Coach support. For the new Stream Deck actions, get **Coach Tools** from **Dash settings → Bundled downloads**, extract and run **Install-Coach-Tools.cmd** once. Existing profiles remain in place. Installed SimHub bridge/templates, game links, Stream Deck plugins and runtime changes may require their own installer/import. Older unconfigured builds need the one-time small upgrade above.
+App patches update the app, help and bundled exports. **From 7.10.0 to 7.10.1, dashboards and Stream Deck files are unchanged:** update the app and restart; no native component import is needed. From 7.9.9, import Angle Coach 1.2 and run the optional Coach Tools installer from Bundled downloads once for the features introduced in 7.10.0. Older 7.9.7/7.9.8 installations use the current full installer. Other native-component changes follow their release notes.
 
 ![Angle Coach with simulated telemetry](assets/angle-coach-preview.png)
 
