@@ -1,6 +1,6 @@
 # Gridworks Drift Coach
 
-**Beta Version 2.0 · build 7.10.1**
+**Beta Version 2.0 · build 7.10.2**
 
 Local Assetto Corsa drift coaching, car/setup tools, individual run review, native SimHub dashboards and a compact Angle Coach overlay.
 
@@ -11,7 +11,7 @@ Open [Releases](https://github.com/lmonroe8/gridworks-drift-coach-releases/relea
 | File | Use |
 | --- | --- |
 | **Gridworks-Drift-Coach-Beta-2.0.zip** | New installation: extract and run **Gridworks-Setup.exe**. The ZIP contains the installer and Start Here guide. |
-| **Gridworks-Small-Update-7.10.1.zip** | Existing builds **7.9.9 or 7.10.0**: extract and run **Update-Gridworks.cmd** after finishing your session. Reuses the installed runtime. |
+| **Gridworks-Small-Update-7.10.2.zip** | Existing builds **7.9.9, 7.10.0 or 7.10.1**: extract and run **Update-Gridworks.cmd** after finishing your session. Reuses the installed runtime. |
 
 Use the named release assets. GitHub's automatically generated **Source code** archives contain the release-channel repository, not the Gridworks app.
 
@@ -38,9 +38,9 @@ Follow the included **START-HERE.html**. After installing, use the **Gridworks D
 - **Data tools:** previewed backup/restore with conflict choices and a safety backup; reviewed diagnostics; balanced/low display settings and hidden-tab pause.
 - **Reference Lab:** optional recorded-run comparison with declared provenance. Demo examples are synthetic; no VDC driver reference data is included.
 - **Support Message:** prepare a message with optional reviewed app details, then copy/download it for your tester conversation.
-- **App updates:** the public signed beta feed is preset in build 7.10.1. Routine app patches download in the background; finish driving and choose **Restart to update**. Saved profiles, setups and recordings stay in place.
+- **App updates:** the public signed beta feed is preset in build 7.10.2. A new-version notification returns on every app opening until the latest build is installed. Choose **Open App Updates → Check for updates**, then finish driving and choose **Restart to update** when the small patch is ready. **Later** dismisses this opening only. Known signed update reminders also survive offline launches. Saved profiles, setups and recordings stay in place.
 
-App patches update the app, help and bundled exports. **From 7.10.0 to 7.10.1, dashboards and Stream Deck files are unchanged:** update the app and restart; no native component import is needed. From 7.9.9, import Angle Coach 1.2 and run the optional Coach Tools installer from Bundled downloads once for the features introduced in 7.10.0. Older 7.9.7/7.9.8 installations use the current full installer. Other native-component changes follow their release notes.
+App patches update the app, help and bundled exports. **From 7.10.0/7.10.1 to 7.10.2, dashboards and Stream Deck files are unchanged:** update the app and restart; no native component import is needed. From 7.9.9, import Angle Coach 1.2 and run the optional Coach Tools installer from Bundled downloads once for the features introduced in 7.10.0. Older 7.9.7/7.9.8 installations use the current full installer. Other native-component changes follow their release notes.
 
 ![Angle Coach with simulated telemetry](assets/angle-coach-preview.png)
 

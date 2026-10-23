@@ -1,35 +1,38 @@
 ## Drift Coach — Beta Version 2.0
 
-**Build 7.10.1 · Windows / original Assetto Corsa**
+**Build 7.10.2 · Windows / original Assetto Corsa**
+
+### New: an update reminder each time you open the app
+
+When a newer version is available, Gridworks opens a notification showing your installed build and the available build. It tells you to open **APP UPDATES → CHECK FOR UPDATES**, then finish driving and choose **RESTART TO UPDATE** when the patch is ready.
+
+- **LATER** or Escape closes the popup for this opening only. It returns the next time you open Gridworks until the latest build is installed.
+- Downloading a patch does not clear the reminder; installing and running the current version does.
+- A previously found update is remembered using signed release metadata and shown again on an offline launch. Reconnect to check/download it. A new release cannot be discovered while offline.
+- The banner and sidebar indicator remain after dismissal, including after a failed check/download.
+- Reopening the PC app starts a background check even when the local controller is already running. Hidden pages and paired tablets do not manage updates.
+- The notification waits for another dialog to close and fits narrow screens. It does not restart the app automatically.
 
 ### Install or update
 
-- **On 7.10.0:** open **App Updates**, check for the update, then **Restart to update** after driving. The changed-file patch is about 130 KB. Native dashboards and Stream Deck exports are byte-identical to 7.10.0; no reimport is needed.
-- **On 7.9.9:** use App Updates or the small upgrade below. This patch also includes the 7.10.0 coaching tools. For their optional native features, import Angle Coach 1.2 and run Coach Tools from Bundled downloads once.
-- **Offline upgrade from 7.9.9/7.10.0:** extract **Gridworks-Small-Update-7.10.1.zip**, close Assetto Corsa and run **Update-Gridworks.cmd**. Keep the files together. Your installed runtime and saved data are reused.
-- **New user or older build:** extract **Gridworks-Drift-Coach-Beta-2.0.zip**, read **START-HERE.html** and run **Gridworks-Setup.exe**. The download has exactly those two files.
-- You need **original Assetto Corsa, Content Manager, CSP and SimHub**. Stream Deck, OBS and a tablet are optional. Python is included privately with the app.
+- **On 7.10.1:** open **App Updates**, choose **Check for updates**, then **Restart to update** after driving. The patch is about **63 KB**.
+- **On 7.10.0:** use the same updater; its patch is about **139 KB**.
+- **On 7.9.9:** use App Updates or the small ZIP. For optional features introduced in 7.10.0, follow the existing Angle Coach 1.2 / Coach Tools import instructions.
+- **Manual update from 7.9.9/7.10.0/7.10.1:** extract **Gridworks-Small-Update-7.10.2.zip**, close Assetto Corsa and run **Update-Gridworks.cmd**. Keep the extracted files together.
+- **New user or older build:** extract **Gridworks-Drift-Coach-Beta-2.0.zip**, read **START-HERE.html** and run **Gridworks-Setup.exe**. The download contains exactly those two files.
 
-### Fixed controls and clearer pages
+Saved profiles, setups, runs and reference recordings stay in place. The existing private runtime is reused by app updates. **SimHub dashboards and Stream Deck exports are unchanged from 7.10.0/7.10.1; no reimport is needed from those builds.**
 
-Saved-result links, Profile Best and the Pit screen now open the selected archived run. Paired tablets can open read-only run breakdowns and return to Pit; administrative commands remain on the gaming PC. Action errors appear visibly. The duplicate live recap and second setup-comparison card have been removed; each selected run and setup experiment has one review.
+You need **original Assetto Corsa, Content Manager, CSP and SimHub**. Stream Deck, OBS and a tablet are optional. A separate Python installation is not required.
 
-### Individual transition and range breakdown
+### Existing coaching tools
 
-Run review has **Overview**, **Transitions**, **Sections & range**, **Driver inputs** and **Notes & video** tabs. Select a confirmed direction change to inspect threshold-to-threshold time, signed entry/exit angles, speed change, throttle/brake/clutch use and time to regain the target. Short sign chatter and crossings over missing-data gaps are excluded.
-
-Sections follow measured direction changes. Select a phase or mark an arbitrary start/end time to measure it, zoom the trace and loop the replay. Metrics are weighted by observed time; gaps over 300 ms are excluded. Recorded traces normally sample every 100 ms, so timing is an estimate at that resolution. Handbrake input is not inferred. Existing traces can be analyzed without re-recording; summary-only legacy records remain limited.
-
-### Scoring sources
-
-**Gridworks training** now works directly from qualifying saved telemetry. Its personal practice index is **60% angle control + 40% continuity**, with component percentages and weighted contributions visible in each run. Missing, interrupted, truncated or insufficient-coverage traces are not rated. Compare the same car, route, compound and training profile. This is not competition judging; line, clipping zones and proximity are not scored.
-
-**Damgam points** stays separate and retains its original calculations. Gridworks identifies missing, invalid, stopped, frozen and other-layout exports, reloads changed configuration and recovers a live export in the connected game folder even if an old folder still exists. Keep **Drift Score Display** running inside Assetto Corsa; use **Recheck Damgam link** after fixing it. A custom unsupported scorer is not silently overwritten.
+This update retains the transition and section/range breakdowns, looped replay, setup import/export, paired tablet review, Gridworks practice index and separate original Damgam points from 7.10.1. See the included Complete Coach Guide for measurements, scoring limits and setup workflows.
 
 ### Validation and feedback
 
-223 Python checks, eight update-interface scenarios and 52 actual Chromium scenarios cover app behavior, measurements, scoring, source separation, selected-range replay, setup tools and paired-tablet access. Installer staging/worker/launcher and native export checks also passed. Both signed upgrades reconstruct all 69 target App files while preserving saved-data fixtures, the existing runtime and the previous app version.
+212 core Python checks and 24 update-interface scenarios passed. Actual Chromium checks cover repeated openings, dismissal, current/newer installed versions, offline/error states, ready-to-restart notices, the installer route, dialog handling and narrow screens, along with the existing coaching/scoring regressions. Each of the three signed upgrade paths reconstructs all 69 target App files and preserves saved-data fixtures and the installed runtime. Installer staging and Win32 bootstrap checks passed.
 
-These are automated and protocol fixtures. Live AC/CSP, SimHub/OBS, physical devices and a real Windows install still need beta rig confirmation.
+These are automated tests and protocol fixtures. A live Windows / AC / CSP / SimHub rig still needs beta confirmation.
 
-[Report a problem or share your tester experience](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include your build, AC/CSP/SimHub versions, which control you clicked and what happened. Use the named release assets; GitHub's automatic Source code downloads contain the release-channel repository, not the app installer.
+[Report a problem or share your experience](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Use the named release assets; GitHub's automatic Source code archives are not the app installer.

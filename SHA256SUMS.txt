@@ -1,2 +1,2 @@
-5509689ba6c484883b6503d94a4034c6a53be2e49c2dce8e92838fcb4a471df9  Gridworks-Drift-Coach-Beta-2.0.zip
-f30b49f6a6acd75fe75bcb20c870be0652c6bc6d91eeebc899fab7e114e01ac1  Gridworks-Small-Update-7.10.1.zip
+2d85c2ee676bbe1c81aad7874a12fbc237c41920feaf3a366f95d22af2c4a9d3  Gridworks-Drift-Coach-Beta-2.0.zip
+c0f9daa088120ce8c776b9bca52c7e9eac32e37fd8d3a54017ec3bc687760f01  Gridworks-Small-Update-7.10.2.zip
