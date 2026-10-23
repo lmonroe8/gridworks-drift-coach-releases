@@ -1,0 +1,22 @@
+name: Publish validated beta assets
+on:
+  push:
+    branches: [main]
+    paths: [publish-plan.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: gridworks-beta-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'lmonroe8/gridworks-drift-coach-releases'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Publish checksummed release files
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/publish_assets.py

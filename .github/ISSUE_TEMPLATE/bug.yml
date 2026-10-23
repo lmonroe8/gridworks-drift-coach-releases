@@ -1,0 +1,35 @@
+name: Bug report
+description: Report an installation, dashboard, telemetry or app problem.
+title: "[Bug] "
+body:
+  - type: input
+    id: build
+    attributes:
+      label: Gridworks build
+      placeholder: "For example: 7.9.9 / Beta Version 2.0"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Your rig and software
+      description: Windows, SimHub, AC/CSP versions and the affected device/page. Add car and track if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened and what did you expect?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to repeat it
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Additional details
+      description: Optional screenshots or reviewed support-message text. Issues are public; leave out credentials and personal files.

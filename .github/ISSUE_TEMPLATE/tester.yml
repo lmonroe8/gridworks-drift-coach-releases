@@ -1,0 +1,39 @@
+name: Tester experience
+description: Tell Leo how the beta worked on your rig.
+title: "[Beta feedback] "
+body:
+  - type: input
+    id: build
+    attributes:
+      label: Gridworks build
+    validations:
+      required: true
+  - type: textarea
+    id: used
+    attributes:
+      label: What did you try?
+      description: Installation, dashboards, setup tools, run review, Stream Deck/OBS or updates.
+    validations:
+      required: true
+  - type: textarea
+    id: liked
+    attributes:
+      label: What worked well or felt useful?
+    validations:
+      required: true
+  - type: textarea
+    id: improve
+    attributes:
+      label: What was confusing, boring or needs improving?
+    validations:
+      required: true
+  - type: dropdown
+    id: experience
+    attributes:
+      label: Would you keep using it?
+      options:
+        - "Yes"
+        - "Maybe, after some changes"
+        - "No"
+    validations:
+      required: true

@@ -1,0 +1,17 @@
+name: Feature suggestion
+description: Suggest a useful change to Drift Coach.
+title: "[Suggestion] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like to do?
+      description: Describe the problem you want this feature to solve.
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: How should it work?
+    validations:
+      required: true
