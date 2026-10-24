@@ -1,57 +1,61 @@
 # Gridworks Drift Coach
 
-**Beta Version 2.0 · build 7.10.2**
+**Beta Version 2.0 · build 7.11.0**
 
-Local Assetto Corsa drift coaching, car/setup tools, individual run review, native SimHub dashboards and a compact Angle Coach overlay.
+A local Windows app for Assetto Corsa drift practice, car/setup tools, individual run review and a paired tablet display. SimHub dashboards, the Angle Coach overlay and Stream Deck controls are included as optional extras.
 
-## Download
+## Download and install
 
-Open [Releases](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases) and choose the latest Gridworks beta:
+[Download build 7.11.0](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/beta-2.0.7.11.0)
 
-| File | Use |
-| --- | --- |
-| **Gridworks-Drift-Coach-Beta-2.0.zip** | New installation: extract and run **Gridworks-Setup.exe**. The ZIP contains the installer and Start Here guide. |
-| **Gridworks-Small-Update-7.10.2.zip** | Existing builds **7.9.9, 7.10.0 or 7.10.1**: extract and run **Update-Gridworks.cmd** after finishing your session. Reuses the installed runtime. |
+1. Download **Gridworks-Drift-Coach-Beta-2.0.zip** from the named release assets.
+2. Extract the ZIP and double-click **Gridworks-Setup.exe**. Setup begins automatically.
+3. Use the **Gridworks Drift Coach Beta 2.0** desktop shortcut for later sessions.
 
-Use the named release assets. GitHub's automatically generated **Source code** archives contain the release-channel repository, not the Gridworks app.
+The download contains the installer and **START-HERE.html**. It does not contain promotional material. The installer contains the app, private Python runtime, desktop host, dashboards, overlay, supported game links, Stream Deck XL profile and icon pack. Python is not a separate prerequisite.
+
+**Existing users: use this full installer for the 7.11.0 desktop migration.** It preserves your existing data. The signed in-app migration for this build is not yet published, so the signed update feed remains at 7.10.2. Do not use an older small-update ZIP to install this build. Normal signed changed-file updates remain supported when published.
+
+GitHub's automatic **Source code** archives contain this release-channel repository, not the Gridworks app.
 
 ## What you need
 
-- A Windows gaming PC with original **Assetto Corsa**, **Content Manager**, **Custom Shaders Patch (CSP)** and **SimHub**.
-- Stream Deck XL, OBS, a tablet and a second display are optional.
-- The installer contains the app, its private Python runtime, both dashboards, the Angle Coach overlay, supported game links, Stream Deck profile and icon pack. Python is not a separate end-user prerequisite.
+- **Windows 10/11 x64**, original **Assetto Corsa**, **Content Manager** and **Custom Shaders Patch (CSP)** for the supported car/setup workflow.
+- **Microsoft WebView2 Runtime** supplies the desktop window. Setup reuses it, or downloads Microsoft's signed runtime once if missing.
+- **SimHub is optional**, for the native dashboards and angle overlay.
+- A tablet, Stream Deck XL, OBS and a second display are optional.
 
-Follow the included **START-HERE.html**. After installing, use the **Gridworks Drift Coach Beta 2.0** shortcut. The controller/browser app runs locally on your PC.
+Keep Gridworks open while recording and using the tablet. Its main controller stays local to your PC.
 
-## What's included
+## Connect a tablet
 
-- **Angle Coach:** 360 × 108 native click-through overlay showing live absolute drift angle, saved car target and **ADD ANGLE / IN TARGET / REDUCE ANGLE**. Use AC windowed/borderless mode for SimHub overlays.
-- **Setup Lab:** six starting guides, baseline/revision tools and setup import/export. Guides are tuning starting points, not proven competition-driver setups.
-- **Training & points:** Gridworks calculates a transparent practice index from saved traces (60% angle control, 40% continuity). Original Damgam points stay on their own tab with missing/stale/layout diagnostics and recovery when the game folder moved.
-- **Detailed run review:** select each confirmed transition for timing, entry/exit angle, speed change, pedal use and recovery. Inspect direction-based phases or any custom time range, then loop that part of the replay.
-- **Run replay:** individual recordings grouped by car, track and layout, synchronized driven path, speed, angle and pedal timeline; playback speed and event jumps. Runs shorter than ten seconds are discarded. Add names, notes, favorites and search.
-- **Ready check:** first-launch connection status for the controller, AC, fresh packets, angle, SimHub, CSP, car library and direct setup evidence, with relevant next steps.
-- **Keep / Review / Practice:** trace-quality labels, recorded observations and one practice goal. Explanations remain hypotheses; there is no invented competition score.
-- **Setup experiments:** compare completed tests only within matching context. Pair by entry speed and tire/road conditions; flag multiple adjustments and unconfirmed setup provenance.
-- **Pit / tablet:** opt-in paired display on your home network, automatic driving/last-run/setup screens, manual screen lock, quiet coaching and setup checklists.
-- **Coach Tools:** a separate optional control-only XL profile, including OBS highlight linking, bookmarks, review, practice and connection tools. Your original 32-key profile and its eight OBS controls are preserved.
-- **Data tools:** previewed backup/restore with conflict choices and a safety backup; reviewed diagnostics; balanced/low display settings and hidden-tab pause.
-- **Reference Lab:** optional recorded-run comparison with declared provenance. Demo examples are synthetic; no VDC driver reference data is included.
-- **Support Message:** prepare a message with optional reviewed app details, then copy/download it for your tester conversation.
-- **App updates:** the public signed beta feed is preset in build 7.10.2. A new-version notification returns on every app opening until the latest build is installed. Choose **Open App Updates → Check for updates**, then finish driving and choose **Restart to update** when the small patch is ready. **Later** dismisses this opening only. Known signed update reminders also survive offline launches. Saved profiles, setups and recordings stay in place.
+Open **Tablet display → Enable tablet display**. The page displays the tablet address, a QR code, a six-digit pairing code and copy buttons.
 
-App patches update the app, help and bundled exports. **From 7.10.0/7.10.1 to 7.10.2, dashboards and Stream Deck files are unchanged:** update the app and restart; no native component import is needed. From 7.9.9, import Angle Coach 1.2 and run the optional Coach Tools installer from Bundled downloads once for the features introduced in 7.10.0. Older 7.9.7/7.9.8 installations use the current full installer. Other native-component changes follow their release notes.
+Connect the tablet and PC to the same home network. Scan the QR code, or open the displayed address in the tablet browser and enter the code. Codes expire after ten minutes; paired browsers reconnect for thirty days, including after an app restart.
 
-![Angle Coach with simulated telemetry](assets/angle-coach-preview.png)
+The tablet switches automatically between driving, the last run and setup checklists. Manual screen lock, fullscreen and a visible reconnect indicator are included. Troubleshooting offers adapter selection, a manual private IPv4 address and an optional Windows Firewall rule limited to Private networks and the local subnet. Updates, course editing, backups and administration stay on the PC.
 
-## Feedback and support
+## What's new
 
-[Report a bug, suggest a feature or share your tester experience](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). A GitHub account is needed to post an issue; public downloads and update checks do not require one. You can also send the app's prepared Support Message through your existing beta conversation with Leo.
+- **Native desktop window:** private runtimes, single-instance launch, safe shutdown and controller recovery. SimHub no longer gates the connection check.
+- **Qualifying practice:** independent **Line 40 / Angle 40 / Estimated style 20** scoring from saved telemetry. Damgam ingestion and its installation steps have been removed.
+- **Course editor:** build a route from a recorded run, place directed start/finish gates and inner/outer targets, and import/export course profiles. Profiles and revisions are saved with scored runs.
+- **Useful deductions:** inspect a deduction at its replay timestamp, compare eligible transitions with a matching best run, and see the largest measured deduction as the next-run practice focus.
+- **Clearer session screen:** the latest result and next practice focus stay visible; detailed input/tire graphs open when needed.
+- **Lower UI load:** compact live packets, no full course geometry in the fast telemetry stream, and rendering limited to visible views.
 
-Tell us your build, AC/CSP/SimHub versions, what you expected, what happened and how to repeat it. Do not upload personal files or credentials to public issues.
+A full practice total requires an authored course and enough continuous telemetry. Free practice still records slides of at least ten seconds when the car straightens. Missing measurements remain explained and unscored. Line uses vehicle-centre distance; automated style is an estimate. Transition/deceleration markers describe a course visually but do not directly change scoring in model 1. This is practice feedback, not official competition judging or licensed UDSM.
 
-## Beta status
+## Also included
 
-The automated suite checks app behavior, signed patches, data preservation and startup rollback using temporary fixtures. Linux/Win32 mocks and synthetic previews do not replace live Windows, device and SimHub/AC testing. Please report your rig experience and suggestions.
+Setup Lab with six starting guides, baselines/revisions and setup import/export; per-car/track/layout run archives; transition and range replay; setup experiments; reference comparisons with declared provenance; reviewed backups and diagnostics; and a **Support message** tool that prepares feedback without sending it automatically.
 
-This repository hosts public releases and the signed update channel. The app source is maintained separately in a private repository. No open-source license is granted for the app by publishing this release channel; third-party components retain their own notices and terms.
+The optional SimHub companion now shows qualifying practice results. Main dash and Angle Coach exports are retained. Original Stream Deck XL controls and eight OBS actions are preserved, with a separate optional Coach Tools profile.
+
+## Feedback and testing
+
+[Report a bug or suggest a change](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose), or share the prepared Support message with Leo through your beta conversation. Public downloads do not require a GitHub account; posting an issue does.
+
+Automated checks cover scoring, pairing/revocation, data preservation, updates, real Chromium interactions, native WebView2 launch and a real Windows automatic installation without SimHub. Live AC driving, particular mod telemetry, tablet/browser combinations and physical SimHub/Stream Deck devices still need tester feedback.
+
+This repository hosts public beta releases and the signed update channel. App source is maintained separately in a private repository. Publishing downloads does not grant an open-source license for the app; third-party components retain their own notices and terms.
