@@ -1,6 +1,6 @@
 # Gridworks Drift Coach
 
-**Production release · version 7.12.0**
+**Production release · version 7.12.1**
 
 A standalone Windows app for Assetto Corsa drift practice, setup work, individual run review and a paired tablet display.
 
@@ -10,9 +10,9 @@ A standalone Windows app for Assetto Corsa drift practice, setup work, individua
 
 Choose **Gridworks-Drift-Coach-Setup.zip**, extract it and double-click **Gridworks-Setup.exe**. Setup starts automatically and creates the **Gridworks Drift Coach** shortcut. The ZIP contains setup and the Start Here guide.
 
-Existing users on **7.9.9, 7.10.0, 7.10.1, 7.10.2, 7.11.0 or 7.11.1** can use **App updates → Check for updates → Restart to update**. Finish driving first. The signed migration preserves saved data and private Python, updates the desktop window, and moves the official release channel to stable.
+Existing users on **7.9.9, 7.10.0, 7.10.1, 7.10.2, 7.11.0, 7.11.1 or 7.12.0** can use **App updates → Check for updates → Restart to update**. Finish driving first. The signed migration preserves saved data and private Python, updates the desktop window, and moves the official release channel to stable.
 
-The separate **Gridworks-Update-7.12.0.zip** supports **7.10.2** as a manual alternative: extract it and run **Update-Gridworks.cmd**. Other supported versions use the app update or full installer.
+The separate **Gridworks-Update-7.12.1.zip** supports **7.10.2** as a manual alternative: extract it and run **Update-Gridworks.cmd**. Other supported versions use the app update or full installer.
 
 GitHub's automatic **Source code** ZIPs contain this release-channel repository. Use the named installer/update assets for the app.
 
@@ -26,15 +26,17 @@ GitHub's automatic **Source code** ZIPs contain this release-channel repository.
 
 Private runtimes are included. Keep the PC app open while recording and using the tablet.
 
-## Community and Pro licensing
+## Seven-day full-app trial, then $5 lifetime
 
-**Community includes all current coaching, scoring, course, setup, run-review and tablet tools.** Existing users keep those tools after upgrading.
+Try every feature for **seven calendar days from the first launch of 7.12.1**. Existing users also receive a seven-day trial when they first open this version. Closing the app does not pause the trial.
 
-The new **License** page accepts signed **Pro** codes or `.gwlicense` files from Gridworks. It supports perpetual or expiring licenses, optional installation binding, status display and removal from the PC while preserving saved data.
+After the trial, a **$5 USD one-time lifetime license** restores full access, with **no subscription or expiry**. Live coaching and recording, new setup/course work and the paired tablet require trial or licensed access. Saved runs and setups stay readable/exportable; backups, support, app updates and activation remain available. License includes saved setup downloads even without a connected car.
 
-Pro pricing, payment processing, automatic delivery and the paid feature split will be announced separately. The current app does not collect payments.
+Open **License → Request a $5 lifetime license** for manual payment instructions from Gridworks. The button prepares a support request and links to [Gridworks on GitHub](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new). No message is posted automatically. After confirming payment, Gridworks supplies a signed `.gwlicense` file. Import it in License to restore access immediately. Automated checkout and license delivery are not connected yet. Do not post installation IDs publicly.
 
-License management stays on the PC. Codes and installation identity are excluded from telemetry, diagnostic exports and user-data backups.
+Trial dates and activated licenses survive app updates and normal reinstallations that retain the user-data folder. Trial tracking is local. License management stays on the PC; codes, customer names and installation identity are excluded from telemetry and diagnostics. User-data backups exclude activation and trial records.
+
+The update from **7.12.0 is about 113 KB**, reusing its unchanged desktop and private runtime. Older supported builds receive their appropriate migration package.
 
 ## Tablet display
 
