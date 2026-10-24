@@ -1,30 +1,33 @@
-## Gridworks Drift Coach — Beta Version 2.0, build 7.11.0
+## Gridworks Drift Coach 7.12.0
+
+This is the first production release under the proper product name **Gridworks Drift Coach**. The app window, installer, shortcuts, help and downloads use that name.
 
 ### Install or upgrade
 
-Download **Gridworks-Drift-Coach-Beta-2.0.zip**, extract it and double-click **Gridworks-Setup.exe**. Close Assetto Corsa first. The ZIP contains only setup and the Start Here guide. Existing profiles, setups and saved runs are preserved.
+Download **Gridworks-Drift-Coach-Setup.zip**, extract it and double-click **Gridworks-Setup.exe**. Close Assetto Corsa first. Setup preserves existing data and opens the app.
 
-Use the **full installer for this desktop migration**, including if you already have 7.10.2. The signed in-app migration is not published yet; the signed feed remains at 7.10.2. Normal signed app updates remain supported when published.
+Builds **7.9.9, 7.10.0, 7.10.1, 7.10.2, 7.11.0 and 7.11.1** can use **App updates → Check for updates → Restart to update**. The signed migration updates the desktop and moves the official beta feed to stable. Old shortcuts are replaced only when they point to this installation.
 
-Windows 10/11 x64 and original Assetto Corsa are required. Content Manager and CSP support the enhanced car/setup workflow. SimHub is now optional for its dashboards/overlay. Private runtimes are bundled; WebView2 is reused or installed from Microsoft when missing.
+**Gridworks-Update-7.12.0.zip** is a manual alternative for **7.10.2** only. Other supported versions use the app update or full installer. The `.gwupdate` assets are consumed by the updater.
 
-### Changes
+### Licensing
 
-- Own desktop window, single-instance launch, safe close and local controller recovery.
-- Rebuilt **Tablet display** connection page with a visible address, QR pairing, six-digit code, copy buttons, active-device status, address selection and Private-network firewall help. Paired browsers reconnect after app restarts.
-- **Line 40 / Angle 40 / Estimated style 20** independent qualifying-practice model replaces Damgam ingestion.
-- Visual course profiles with directed gates, inner/outer targets, revisions and import/export.
-- Clickable deductions, matching-course best-run comparisons and transition-level inspection.
-- Clearer latest-result/next-focus layout and smaller live telemetry packets.
+**Community keeps all current tools.** The new PC-only **License** page supports signed Pro code/file activation, expiry checks, optional installation binding and removal while preserving saved data. Invalid replacement codes leave a valid license intact.
 
-To connect a tablet: put both devices on the same home network, choose **Tablet display → Enable tablet display**, then scan the QR code or open the displayed address and enter the code. Keep the PC app open.
+Pricing, payment processing, automatic license delivery and the paid feature split are future configuration. The app does not collect payments.
 
-For full practice scores, create and select a course with gates and targets. Free practice still saves slides of at least ten seconds. Missing data does not become a fabricated total. Vehicle-centre line and automated style are estimates, not official judging or licensed UDSM. Transition/deceleration markers are descriptive in model 1.
+### Included coaching and tablet features
 
-The updated optional SimHub companion is installed when SimHub is detected; its export remains in Bundled downloads. Main dash, Angle Coach and original Stream Deck/OBS controls are retained.
+The release includes the standalone desktop, visible tablet address and QR/code pairing, reconnect status, automatic tablet screens, the independent **40 line / 40 angle / 20 estimated style** practice model, course editor, clickable deductions and transition comparisons.
 
-### Validation and beta feedback
+Full totals require an authored course and sufficient telemetry. Scores are independent practice estimates. Existing setups, courses, runs, pairing and licenses are preserved by supported upgrades.
 
-Python/core and real Chromium suites passed, alongside native Windows WebView2, duplicate-launch, shutdown and automatic installation checks without SimHub. Installer staging and embedded payload checks also run during packaging. Synthetic and automated checks do not replace live game, mod and device testing.
+If coming from **7.10.2 or earlier**, reimport the optional **Gridworks Sim Center** companion from Bundled downloads for its new scoring page. Full setup installs it when SimHub is detected. Main dash, Angle Coach and original Stream Deck/OBS controls are retained.
 
-[Report a problem or suggestion](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include your build, car/track, AC/CSP versions, tablet/browser and the steps that produced the problem.
+### Validation
+
+Python/core and real Chromium suites passed, including license import, activation, persistence, invalid/expired/wrong-installation cases, removal and responsive layouts. Windows checks passed for native launch, single-instance behaviour, graceful shutdown, automatic installation without SimHub and migration through the actual old 7.10.2 update worker.
+
+All six signed patch baselines reconstruct the exact target app inventory and preserve saved data, licenses and private Python. Legacy verifiers accept the migration metadata. Public downloads contain no private signing material.
+
+[Report a problem or suggestion](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose).

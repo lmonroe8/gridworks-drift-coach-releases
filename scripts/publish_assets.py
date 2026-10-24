@@ -36,12 +36,18 @@ class NoTransportRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, request, fp, code, msg, headers, newurl):
         raise ValueError('Build transport redirects are not allowed')
 
+_BLOBS={}
+
 def transfer_blob(sha,limit):
     if not re.fullmatch('[0-9a-f]{40}',sha):raise ValueError('Invalid transfer blob')
+    if sha in _BLOBS:
+        if len(_BLOBS[sha])>limit:raise ValueError('Transfer blob exceeds limit')
+        return _BLOBS[sha]
     blob=api(API+'/git/blobs/'+sha)
     if blob.get('encoding')!='base64':raise ValueError('Invalid blob encoding')
     body=base64.b64decode(blob['content'])
     if len(body)>limit:raise ValueError('Transfer blob exceeds limit')
+    _BLOBS[sha]=body
     return body
 
 def transport_asset(entry):
@@ -86,10 +92,22 @@ def asset_bytes(entry):
         raise ValueError('Release checksum failed')
     return bytes(output)
 
+
+def release_options(plan):
+    tag=plan.get('tag','')
+    beta=bool(re.fullmatch(r'beta-2\.0\.[0-9]+\.[0-9]+\.[0-9]+',tag))
+    stable=bool(re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+',tag))
+    prerelease=plan.get('prerelease',beta)
+    if plan.get('schema')!=1 or not (beta or stable) or type(prerelease) is not bool:
+        raise ValueError('Invalid release plan')
+    if beta and not prerelease:raise ValueError('Production releases require a v version tag')
+    return dict(prerelease=prerelease,make_latest='false' if prerelease else 'true')
+
+
 def main():
     plan=json.loads((ROOT/'publish-plan.json').read_text())
     tag=plan['tag']
-    if plan['schema']!=1 or not re.fullmatch(r'beta-2\.0\.[0-9]+\.[0-9]+\.[0-9]+',tag):raise ValueError('Invalid release plan')
+    options=release_options(plan)
     notes=(ROOT/'release-notes.md').read_text();staging=ROOT/'dist';staging.mkdir(exist_ok=True);files=[]
     for entry in plan['assets']:
         name=entry['name']
@@ -99,7 +117,7 @@ def main():
     try:release=api(API+'/releases/tags/'+urllib.parse.quote(tag,safe=''))
     except urllib.error.HTTPError as error:
         if error.code!=404:raise
-        release=api(API+'/releases','POST',dict(tag_name=tag,target_commitish=os.environ['GITHUB_SHA'],name=plan['title'],body=notes,draft=True,prerelease=True))
+        release=api(API+'/releases','POST',dict(tag_name=tag,target_commitish=os.environ['GITHUB_SHA'],name=plan['title'],body=notes,draft=True,**options))
     existing={a['name']:a for a in release.get('assets',[])}
     for entry,file in files:
         previous=existing.get(entry['name'])
@@ -110,7 +128,7 @@ def main():
         upload=release['upload_url'].split('{',1)[0]+'?'+urllib.parse.urlencode({'name':entry['name']})
         asset=api(upload,'POST',file.read_bytes(),'application/octet-stream')
         if asset['size']!=entry['bytes'] or (asset.get('digest') and asset['digest']!='sha256:'+entry['sha256']):raise ValueError('Uploaded asset did not verify')
-    if release['draft']:release=api(API+'/releases/'+str(release['id']),'PATCH',dict(draft=False,prerelease=True))
+    if release['draft']:release=api(API+'/releases/'+str(release['id']),'PATCH',dict(draft=False,**options))
     print(json.dumps(dict(release=release['html_url'],assets=[e['name'] for e,_ in files],signing_key_used=False)))
 
 if __name__=='__main__':main()

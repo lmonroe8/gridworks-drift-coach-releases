@@ -57,4 +57,12 @@ class TransportTests(unittest.TestCase):
         entry={k:v for k,v in self.entry.items() if k!='artifact_transport_blob'}
         entry['chunks']=[dict(git_blob='a'*40,bytes=len(self.payload),sha256=entry['sha256'])]
         with patch.object(p,'transfer_blob',return_value=self.payload):self.assertEqual(p.asset_bytes(entry),self.payload)
+class ProductionReleaseTests(unittest.TestCase):
+    def test_production_is_stable_and_latest(self):
+        self.assertEqual(p.release_options(dict(schema=1,tag='v7.12.0',prerelease=False)),dict(prerelease=False,make_latest='true'))
+    def test_legacy_beta_stays_prerelease(self):
+        self.assertEqual(p.release_options(dict(schema=1,tag='beta-2.0.7.11.0')),dict(prerelease=True,make_latest='false'))
+    def test_beta_tag_cannot_be_relabelled_as_production(self):
+        with self.assertRaises(ValueError):p.release_options(dict(schema=1,tag='beta-2.0.7.11.0',prerelease=False))
 if __name__=='__main__':unittest.main()
+

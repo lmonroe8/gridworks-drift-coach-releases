@@ -1,4 +1,4 @@
-name: Publish validated beta assets
+name: Publish verified Gridworks releases
 on:
   push:
     branches: [main]
