@@ -16,6 +16,10 @@ jobs:
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Verify release transport integrity
+        env:
+          GH_TOKEN: test-token-never-forward
+        run: python3 -m unittest discover -s scripts -p 'test_publish_assets.py' -v
       - name: Publish checksummed release files
         env:
           GH_TOKEN: ${{ github.token }}
