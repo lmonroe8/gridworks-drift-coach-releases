@@ -1,6 +1,6 @@
 # Gridworks Drift Coach
 
-**Production release · version 7.12.2**
+**Production release · version 7.13.0**
 
 A standalone Windows app for Assetto Corsa drift practice, setup work, individual run review and a paired tablet display.
 
@@ -10,9 +10,7 @@ A standalone Windows app for Assetto Corsa drift practice, setup work, individua
 
 Choose **Gridworks-Drift-Coach-Setup.zip**, extract it and double-click **Gridworks-Setup.exe**. Setup starts automatically and creates the **Gridworks Drift Coach** shortcut. The ZIP contains setup and the Start Here guide.
 
-Existing users on **7.9.9, 7.10.0, 7.10.1, 7.10.2, 7.11.0, 7.11.1, 7.12.0 or 7.12.1** can use **App updates → Check for updates → Restart to update**. Finish driving first. The signed migration preserves saved data and private Python, updates the desktop window, and moves the official release channel to stable.
-
-The separate **Gridworks-Update-7.12.2.zip** supports **7.10.2** as a manual alternative: extract it and run **Update-Gridworks.cmd**. Other supported versions use the app update or full installer.
+**Existing users on 7.12.2 or earlier must use the full installer once for 7.13.0.** Close Assetto Corsa and Gridworks, extract **Gridworks-Drift-Coach-Setup.zip**, and run **Gridworks-Setup.exe** using the existing installation. Saved runs, setups, trial dates and existing lifetime licenses are preserved. This release refreshes update verification and cannot arrive through the old App Updates verifier. Normal signed app updates resume on the new stable recovery channel after this one-time upgrade. Deliberately configured custom channels are preserved.
 
 GitHub's automatic **Source code** ZIPs contain this release-channel repository. Use the named installer/update assets for the app.
 
@@ -32,11 +30,9 @@ Try every feature for **seven calendar days from the first trial-enabled launch*
 
 After the trial, a **$5 USD one-time lifetime license** restores full access, with **no subscription or expiry**. Live coaching and recording, new setup/course work and the paired tablet require trial or licensed access. Saved runs and setups stay readable/exportable; backups, support, app updates and activation remain available. License includes saved setup downloads even without a connected car.
 
-Open **License → Request a $5 lifetime license** for manual payment instructions from Gridworks. The button prepares a support request and links to [Gridworks on GitHub](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new). No message is posted automatically. After confirming payment, Gridworks supplies a signed `.gwlicense` file. Import it in License to restore access immediately. Automated checkout and license delivery are not connected yet. Do not post installation IDs publicly.
+Open **License → Buy $5 lifetime license** to purchase through Stripe. Checkout uses the verified signed release configuration and includes this PC's random installation reference. Use an email address you can receive mail at. After verified settled payment, the hosted service emails a ZIP containing your signed `.gwlicense` file. Extract the ZIP and import that file in the License page. The seven-day trial stays inside Gridworks; checkout is a one-time payment. Sandbox licenses do not activate the public app. Keep your license file and installation ID private.
 
 Trial dates and activated licenses survive app updates and normal reinstallations that retain the user-data folder. Trial tracking is local. License management stays on the PC; codes, customer names and installation identity are excluded from telemetry and diagnostics. User-data backups exclude activation and trial records.
-
-The update from **7.12.1 is about 143 KB** and from **7.12.0 about 163 KB**, reusing their unchanged desktop and private runtime. Older supported builds receive their appropriate migration package.
 
 ## Tablet display
 
@@ -69,6 +65,6 @@ Optional SimHub exports, Angle Coach, Stream Deck XL profiles, OBS controls and 
 
 [Report an issue or suggest a feature](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include your app version, car/track, AC/CSP versions, tablet/browser and steps to reproduce the problem.
 
-275 core tests, update interface checks and real Chromium workflows passed, including a captured run interrupted by a pit return, individual run/transition links, separate PC/tablet views, tablet access boundaries and narrow layouts. Automated checks also cover signed licensing, stable-channel migration, preservation of records and licenses, native WebView2 launch and a real Windows automatic installation without SimHub. The migration test uses the actual 7.10.2 update worker to open the new desktop. Live game/mod and physical device combinations still benefit from user reports.
+331 core tests, update interface checks, real Chromium workflows, and Windows desktop/full-installer checks passed for 7.13.0. The published installer payload, replacement public update key, recovery channel, unchanged production license trust and absence of private keys were verified. The signed recovery feed and $5 checkout configuration were verified, and the changed-file patch reconstructs the target app exactly. Stripe sandbox checkout/email delivery and live restricted-key read access were verified; no live self-purchase was used for testing. Live game/mod and physical-device combinations still benefit from user reports.
 
 This repository hosts public releases and signed update feeds. App source is maintained separately in a private repository. Publishing downloads does not grant an open-source license for the app; third-party components retain their own notices and terms.
