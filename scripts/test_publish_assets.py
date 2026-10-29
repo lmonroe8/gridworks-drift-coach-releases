@@ -57,6 +57,15 @@ class TransportTests(unittest.TestCase):
         entry={k:v for k,v in self.entry.items() if k!='artifact_transport_blob'}
         entry['chunks']=[dict(git_blob='a'*40,bytes=len(self.payload),sha256=entry['sha256'])]
         with patch.object(p,'transfer_blob',return_value=self.payload):self.assertEqual(p.asset_bytes(entry),self.payload)
+class AssetLimitsTests(unittest.TestCase):
+    def test_current_installer_size_is_supported(self):
+        p.validate_asset(dict(name='Gridworks-Drift-Coach-Setup.zip',bytes=47_604_649))
+    def test_invalid_or_unbounded_assets_are_rejected(self):
+        for size in (0,-1,64_000_000,True,'47604649'):
+            with self.subTest(size=size),self.assertRaises(ValueError):
+                p.validate_asset(dict(name='Gridworks-Drift-Coach-Setup.zip',bytes=size))
+        with self.assertRaises(ValueError):p.validate_asset(dict(name='../private.pem',bytes=100))
+
 class ProductionReleaseTests(unittest.TestCase):
     def test_production_is_stable_and_latest(self):
         self.assertEqual(p.release_options(dict(schema=1,tag='v7.12.0',prerelease=False)),dict(prerelease=False,make_latest='true'))
@@ -65,4 +74,5 @@ class ProductionReleaseTests(unittest.TestCase):
     def test_beta_tag_cannot_be_relabelled_as_production(self):
         with self.assertRaises(ValueError):p.release_options(dict(schema=1,tag='beta-2.0.7.11.0',prerelease=False))
 if __name__=='__main__':unittest.main()
+
 

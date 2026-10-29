@@ -20,6 +20,8 @@ REPO=os.environ['GITHUB_REPOSITORY']
 if REPO!='lmonroe8/gridworks-drift-coach-releases':raise SystemExit('Unexpected release repository')
 API='https://api.github.com/repos/'+REPO
 TOKEN=os.environ['GH_TOKEN']
+MAX_RELEASE_ASSET=64_000_000
+MAX_TRANSPORT_BYTES=66_000_000
 
 def api(url,method='GET',body=None,kind='application/json'):
     parsed=urllib.parse.urlsplit(url)
@@ -57,7 +59,7 @@ def transport_asset(entry):
         or parsed.port not in (None,443) or parsed.fragment
         or not re.fullmatch(r'sdmntpr[a-z0-9-]*\.oaiusercontent\.com',parsed.hostname or '')):
         raise ValueError('Unexpected build transport endpoint')
-    if not 0<ticket['bytes']<42_000_000 or not re.fullmatch('[0-9a-f]{64}',ticket['sha256']):
+    if not 0<ticket['bytes']<MAX_TRANSPORT_BYTES or not re.fullmatch('[0-9a-f]{64}',ticket['sha256']):
         raise ValueError('Invalid build transport limits')
     if ticket['member']!=entry['name']:raise ValueError('Unexpected build archive member')
     # This request deliberately has no GitHub token or repository headers.
@@ -104,6 +106,11 @@ def release_options(plan):
     return dict(prerelease=prerelease,make_latest='false' if prerelease else 'true')
 
 
+def validate_asset(entry):
+    if not re.fullmatch(r'[A-Za-z0-9_.-]+',entry['name']) or type(entry['bytes']) is not int or not 0<entry['bytes']<MAX_RELEASE_ASSET:
+        raise ValueError('Invalid release asset')
+
+
 def main():
     plan=json.loads((ROOT/'publish-plan.json').read_text())
     tag=plan['tag']
@@ -111,7 +118,7 @@ def main():
     notes=(ROOT/'release-notes.md').read_text();staging=ROOT/'dist';staging.mkdir(exist_ok=True);files=[]
     for entry in plan['assets']:
         name=entry['name']
-        if not re.fullmatch(r'[A-Za-z0-9_.-]+',name) or not 0<entry['bytes']<40_000_000:raise ValueError('Invalid release asset')
+        validate_asset(entry)
         output=asset_bytes(entry)
         file=staging/name;file.write_bytes(output);files.append((entry,file))
     try:release=api(API+'/releases/tags/'+urllib.parse.quote(tag,safe=''))
@@ -132,3 +139,4 @@ def main():
     print(json.dumps(dict(release=release['html_url'],assets=[e['name'] for e,_ in files],signing_key_used=False)))
 
 if __name__=='__main__':main()
+
