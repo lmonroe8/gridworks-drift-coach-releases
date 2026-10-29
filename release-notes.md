@@ -29,3 +29,10 @@ The optional Crew Chief voice link is included and off by default. Audible Drift
 The license service enforces one destination per license. Retrying the same move returns the same replacement. Previous offline copies cannot be remotely revoked.
 
 Seven-day full-app trial, then **$5 once for a lifetime license**. Existing trial dates and licenses are retained.
+
+## Visual instruction manual
+
+- [Download the 49-page PDF instruction manual](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Visual_Instruction_Manual.pdf)
+- [Download the full-size screenshot pack](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Screenshot_Pack.zip)
+
+Covers all 16 app sections, with 39 app views and seven dashboard/overlay examples. The PDF includes clickable contents and step-by-step instructions. The screenshot ZIP includes an HTML gallery and CSV index. Screenshots use demonstration data; SimHub images are native-template previews.

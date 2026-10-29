@@ -22,6 +22,13 @@ Driver profiles keep personal runs, setups and preferences separate. Your existi
 
 GitHub's automatic **Source code** ZIPs contain this release-channel repository. Use the named installer/update assets for the app.
 
+## Visual instruction manual
+
+- [Download the 49-page PDF instruction manual](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Visual_Instruction_Manual.pdf)
+- [Download the full-size screenshot pack](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Screenshot_Pack.zip)
+
+The manual covers all 16 sections, with clickable contents, step-by-step instructions, 39 app views and seven dashboard/overlay examples. The screenshot pack includes an HTML gallery and CSV index. Screenshots use demonstration data; SimHub images are native-template previews.
+
 ## Requirements
 
 - **Windows 10/11 x64** and original **Assetto Corsa**.
