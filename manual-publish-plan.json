@@ -1,0 +1,344 @@
+{
+  "schema": 1,
+  "tag": "v7.14.0",
+  "release_id": 428384798,
+  "assets": [
+    {
+      "name": "Gridworks_Drift_Coach_7.14_Visual_Instruction_Manual.pdf",
+      "bytes": 8364936,
+      "sha256": "847f4be8f29620839710a828ba274509352815901b100f0a4d3b540c071a1b86",
+      "content_type": "application/pdf",
+      "chunks": [
+        {
+          "git_blob": "594ecd0b0ae1b7927f03f6d6a869c00125424f3d",
+          "bytes": 524288,
+          "sha256": "775074012e9118669d89deaea4a81cc204a4222377c9fb280b6febc8882e5657"
+        },
+        {
+          "git_blob": "9fad1a2ea949e383ed2409f675c00c4083f580ef",
+          "bytes": 524288,
+          "sha256": "201e4b083593600f5465d3e1586e7edb589cbf7ad82678febe1bac5d57bce996"
+        },
+        {
+          "git_blob": "cfbdb4b356ef1b99bc916da3a0e57fd2ab0278d4",
+          "bytes": 524288,
+          "sha256": "31679d2f2093ac2f04b11de502773315d9aa5606eb6f9a6d1f4ca84df5ceeb2c"
+        },
+        {
+          "git_blob": "70dd6f33d065a8f35db8be9787a239cbd556373f",
+          "bytes": 524288,
+          "sha256": "25c7f9e01014401358dbc0610820131bede91ba4d23987910ee4e6e164abb535"
+        },
+        {
+          "git_blob": "ed240c67a3a57ccae9fec695e07798b4d0dcd617",
+          "bytes": 524288,
+          "sha256": "685eb33018315a639ed196eaa7dd7d3ff8c64e7bac07243256dce656d95a62cc"
+        },
+        {
+          "git_blob": "86f5e8a374f93401838d4a1bfdbe17f9e1fa32a4",
+          "bytes": 524288,
+          "sha256": "0ccfd80c1136bdc92f14f72d082af980711cafd166fe2392688eab422d3df107"
+        },
+        {
+          "git_blob": "790c7a167cd4dd3371c7a4153e3e05c32a7c3187",
+          "bytes": 524288,
+          "sha256": "3b13f06ff7044c9102380611295600bba66c9c192dae437d1f9d4a30b13bdfae"
+        },
+        {
+          "git_blob": "d0f0bf5287fb18034428ff1d55c4fdd1c575ffce",
+          "bytes": 524288,
+          "sha256": "9b9a4f3b4d32cf548989aa4da68d1a907475353eb4a3208d8c111ca8319c319e"
+        },
+        {
+          "git_blob": "8d5260b95c559693cc4059f7f398bd7ed75dab5f",
+          "bytes": 524288,
+          "sha256": "157d65a702b34e00e638a1cb93a2598bbcca972e760d8dcfa5544854a197fd96"
+        },
+        {
+          "git_blob": "93711648e855019e0a37e642795a80f1b396cbcd",
+          "bytes": 524288,
+          "sha256": "af060f9daba32d10a94e4d494349e9275134cdf3d81266c1e849f04f843a61a1"
+        },
+        {
+          "git_blob": "ac893a30427435ec99c18398f0998b480aa7b0ff",
+          "bytes": 524288,
+          "sha256": "08d8c810729a1a94c8b3148c82d063488dc406c4237fd9eaa3ba175fbf72d722"
+        },
+        {
+          "git_blob": "afe9dac79ad5e0087aa53e971f07babd54196212",
+          "bytes": 524288,
+          "sha256": "1119f136c885282a8ca7449ead62fc0735c82eb721d2e141ea4ccdafbe8cb726"
+        },
+        {
+          "git_blob": "1abf36dc605d6913e8326a6be96f6ca0bc162be2",
+          "bytes": 524288,
+          "sha256": "b21259b834711f94f7b6543fb3e2b0d3f03cd5304295cc66408325c0f177f11e"
+        },
+        {
+          "git_blob": "584e858af5f6302e7324648197302389068c4875",
+          "bytes": 524288,
+          "sha256": "594d950df9a36f0502a0810a7da766d762c904e92e4a661ae02b4c6f420037e2"
+        },
+        {
+          "git_blob": "2e77762aabb24e95495b96d4b23bc160d912afab",
+          "bytes": 524288,
+          "sha256": "160a03fe2f0780278c7d025e7e9a58c39b38436498d79efd3b8a4ac163c818be"
+        },
+        {
+          "git_blob": "79a976811b4ebe25ccbf603a03bbe9d7dc2f829d",
+          "bytes": 500616,
+          "sha256": "7ba93a57bc78472c66ddce9a39aebcf4f24b99123ac6e19162d9457a523f7ce5"
+        }
+      ]
+    },
+    {
+      "name": "Gridworks_Drift_Coach_7.14_Screenshot_Pack.zip",
+      "bytes": 22022492,
+      "sha256": "a6090f04c3a8e64019571e7926f8eca9c3165db35c01f8c392f3264eb3f027a3",
+      "content_type": "application/zip",
+      "chunks": [
+        {
+          "git_blob": "1c929c42a2a4c3ba02ce88ca0988b08bc643c27c",
+          "bytes": 524288,
+          "sha256": "dfc6c1413639b9f61f88e8f275a24f039deec7f1935d8ba1dba07942e7432b57"
+        },
+        {
+          "git_blob": "70ea34202c1aadc8572989fb9fdad1a269c71f86",
+          "bytes": 524288,
+          "sha256": "fbb24ce8d798bc6b8c4a91289d1d70012f18f4f65960e826eb8e6a92837fe9d9"
+        },
+        {
+          "git_blob": "9be9ce0ceea3553f1fdc45d7e210331a55b0ba6e",
+          "bytes": 524288,
+          "sha256": "9b0aca0aa9934f96c3955b329c36e5d8a4b413759f4a2842c2aceb49b6d65f4b"
+        },
+        {
+          "git_blob": "ef880ada3cbb1e91cf7268b877b961434f0010cd",
+          "bytes": 524288,
+          "sha256": "17e597585d88d1f5c227b13c4ff7d8cfa3f2d98c80690cc1528df396866137d6"
+        },
+        {
+          "git_blob": "534b4831cbf55442a96f986f5e87f962aa3b5608",
+          "bytes": 524288,
+          "sha256": "610f1b553950a7aa7b3eda967da9df99c6d952b108bad7a7b5491e4f52b74ad1"
+        },
+        {
+          "git_blob": "5f67fd154dde247887c272c990aa24057d0a1c54",
+          "bytes": 524288,
+          "sha256": "0a2f1c38f228a4b27436a62b410d96e050edd3539ae37c56f72220c4cb80099c"
+        },
+        {
+          "git_blob": "94a38d0ab8cde69433eb219c19e377c55d688296",
+          "bytes": 524288,
+          "sha256": "35cebb9b9ee2b43d67bf5f85b84ab7f809bc1ac9ac3344c0c9cc3c4b009d6ddd"
+        },
+        {
+          "git_blob": "3930410fd6edb5b791477ae9edbdacf0eb13bde0",
+          "bytes": 524288,
+          "sha256": "11ed6c45239c23b74281a1fd6118efeb565bd5dbb06f9061ae4042101545ec50"
+        },
+        {
+          "git_blob": "c42d8c89cc87d3ecf8e268bd202e7b96cffad962",
+          "bytes": 524288,
+          "sha256": "1f9a4df9378d322b810443279f2d7cea63511be13f03f59c23e0f1d74dc5c884"
+        },
+        {
+          "git_blob": "c40076c5156e4edf469dc5dbd272bdb87c2650f7",
+          "bytes": 524288,
+          "sha256": "be3a829502f0f27e054221666a0b23c6d4cd8c0ad3f4526ae9459106136a741b"
+        },
+        {
+          "git_blob": "772c7d73c5f48e28ae0e2e1c6e2baedefdebec5d",
+          "bytes": 524288,
+          "sha256": "f9b5f783ea585c0fedfaf28b7e7a1ddc81354e3aca90658237b6e577803fef27"
+        },
+        {
+          "git_blob": "22095b9c260338a2ead538bf60be1af9678e6798",
+          "bytes": 524288,
+          "sha256": "61fe1873ba3198fd285145b2f23bdaebe5906eee819db67be04e00bfd3df0bac"
+        },
+        {
+          "git_blob": "2368ddef1aa5a0dfaaa2bdc9d1fcc7024e3a1af6",
+          "bytes": 524288,
+          "sha256": "dec0a1e1668d37aa1f8615fbc48f85482600c59215cf58db06c9602900e6e9d2"
+        },
+        {
+          "git_blob": "da4325d48081dda069802662bdfbdb12f3dd9191",
+          "bytes": 524288,
+          "sha256": "0861518fbd2bca9571aba3dc745300fc9cceeca00d537620c4e66d040c62a589"
+        },
+        {
+          "git_blob": "267f67832289b23e2306e4fec7ed18df7fe97df7",
+          "bytes": 524288,
+          "sha256": "acb8f4066408a8676bab297dfaf65d1dbfada5a28b40063964462d57864c9fcd"
+        },
+        {
+          "git_blob": "f2c8c5c3542cb708708384014492b39ce3fa5d34",
+          "bytes": 524288,
+          "sha256": "63c76f49ea903593dbe607d89ef824f8b8df7c3573313a377f7ced66bc269e6e"
+        },
+        {
+          "git_blob": "e9c93ffbb5f1a6030bd82bb4aa364da1b86cab94",
+          "bytes": 524288,
+          "sha256": "0c2da25a529b5dc14c294f63c6b2b758d1fa12194936095b94b010301698a7f5"
+        },
+        {
+          "git_blob": "9810afe3e4870d2116fb5508dc3eb19567fd09f3",
+          "bytes": 524288,
+          "sha256": "6669472721de6dfc312c76a9c6f0ee5b5d5dac0baabf3e6441e43e67a2aef1dc"
+        },
+        {
+          "git_blob": "d79d72a59295c370d2c669f27b5aa6a9677c2412",
+          "bytes": 524288,
+          "sha256": "1715b1883af55459559c686e941608dadf4780110714a60abfca82f25022eb89"
+        },
+        {
+          "git_blob": "52c6897d7c3ce89a81bfeee22bb4f38dca58c821",
+          "bytes": 524288,
+          "sha256": "99e0dbba38f2d338c6136d45fb66854d65ec22339218dade9822e6e79298e319"
+        },
+        {
+          "git_blob": "f914828e2d22514388e24c5522dc878f376ab272",
+          "bytes": 524288,
+          "sha256": "d2e6d088de5ab389561df408c1f543475948cd50cbe38527f621471bfd4d105c"
+        },
+        {
+          "git_blob": "555914a9e4d2a37b45b5c937e81e25af9afb5302",
+          "bytes": 524288,
+          "sha256": "519b568799e8dba4d45bbe6f573c99a8504861a2c758d76a58578abcea047bd6"
+        },
+        {
+          "git_blob": "c54a3fd7ede4c0e4e07ce37d031ea9fa6870064c",
+          "bytes": 524288,
+          "sha256": "13a06ce01aa0aa73fb1c034a8beb0290a06283145527e4405fe45798c2e30e8e"
+        },
+        {
+          "git_blob": "83884b92c70dfd2df5565e72b7be77d9dc9f7d03",
+          "bytes": 524288,
+          "sha256": "7845498177a459eb2e9e3b57472ad614272601c7f7bf697acbd3e0050408683d"
+        },
+        {
+          "git_blob": "84e1592a95e3d6ccb64104b5a50773655d716e68",
+          "bytes": 524288,
+          "sha256": "cdcf13dee04dc9ebeed63c044edb30503133c870aae114379ff9b559f65704c8"
+        },
+        {
+          "git_blob": "b4eb93cb3c1cce6b441501b94608f49d0427b5af",
+          "bytes": 524288,
+          "sha256": "983e83df0d14ad00dabc05e8c2697ca8d378b34a3c2f246810ec95badb35b246"
+        },
+        {
+          "git_blob": "827e20eef885e23bee643806ab78519d817133f6",
+          "bytes": 524288,
+          "sha256": "931bc36629feff24a37c4254d0ba0aeeadab1b18a800a592294caf2cb989e822"
+        },
+        {
+          "git_blob": "8d767e0effd5e598dc6b4551da36fbcf05298466",
+          "bytes": 524288,
+          "sha256": "74079bf3b0ca10d261c5166b95fb626af8803b0cde42b0ee01269c8ef501f60e"
+        },
+        {
+          "git_blob": "ef06bc54520bc40a6a713d39187128d90bab2dfe",
+          "bytes": 524288,
+          "sha256": "0591c632c81eb9d049018156ad90d099399bfb5791fcf091b5ddc819de5342a8"
+        },
+        {
+          "git_blob": "797edfa2c0a6109132b7639a8037d04e91b0e0c5",
+          "bytes": 524288,
+          "sha256": "70a5e2e0ae99daa30a4f65e84a48d5e50cd2050ac6c7f1f5d3c7eb9898e52919"
+        },
+        {
+          "git_blob": "bbfc3b7573d86c46fb347a2c9857c19fbebb2f5a",
+          "bytes": 524288,
+          "sha256": "edbb0e75882821b8efb4ca5f979e5c8ba0ca996c277a54922bf42a0f40dc3b97"
+        },
+        {
+          "git_blob": "e03ae97df5a3a2f13858fbd8cca95223a1422c2c",
+          "bytes": 524288,
+          "sha256": "97a6f5a0ca4f8a9fe9f7d4784630cd7a749c315afb61cc86f44f0a334504ac01"
+        },
+        {
+          "git_blob": "a5cb1e9b85e2820dfd8a3a514b90125d18b90141",
+          "bytes": 524288,
+          "sha256": "cff858d41be52e8ecf0a17be6d9b2fcfa963a2b4e0cf38b308ecb8e80a10e25a"
+        },
+        {
+          "git_blob": "fe3a78fc51de355236087b7d623f348cc1bb0185",
+          "bytes": 524288,
+          "sha256": "fb52a9a5c3113820349e0dffd359109621f21f35be146a82fc04dec9ecaf190b"
+        },
+        {
+          "git_blob": "a7c27f7936bdcaf7b25bebb9bb01dd68b83de783",
+          "bytes": 524288,
+          "sha256": "14aeb6973ddcac0cf09fc8c9a6909c62abca92f41cfc97a530055b53be5666c9"
+        },
+        {
+          "git_blob": "1fc47a75a770eaefba4b9778235bc041af0515ae",
+          "bytes": 524288,
+          "sha256": "737bc32595d6fbf53742d488594a164a5a238be649a515b1057effaa2100aaec"
+        },
+        {
+          "git_blob": "63210788d7241c08cb4b2ff676df822bbf843a62",
+          "bytes": 524288,
+          "sha256": "01c47d018953281b407ba93dd58a37fdd5bc2e208fa760555c7434b5772a9b73"
+        },
+        {
+          "git_blob": "e8acfaf7b42748666ff635403337f06335270756",
+          "bytes": 524288,
+          "sha256": "dd71fa2ef3394ca67f512b8fbfd0d12ca0a8ccfc02e88d24e9a2e9a15aabc9d0"
+        },
+        {
+          "git_blob": "7b8f70937626d141e524e1e9bf486a7bf6b8dc31",
+          "bytes": 524288,
+          "sha256": "dd76d19a9d13c2d6f3ca699389ce19a884ee6020cca375052460e940004a225a"
+        },
+        {
+          "git_blob": "70b886691cd862dab57b3bc75299fe8d182e0b87",
+          "bytes": 524288,
+          "sha256": "51701acb11a3ec563ec501e4779249db9c986b212d58ec1178d8d59fb0f67c2f"
+        },
+        {
+          "git_blob": "53cf3746fd6d4dbe5918fe86b3da33664d00a4af",
+          "bytes": 524288,
+          "sha256": "cb25b9bf7c3c230d6ee779a439f9407105285c5c41c44c4f3bdbab7153aca7b9"
+        },
+        {
+          "git_blob": "d4be1609963d236a35deefaa2fd81077771ec73b",
+          "bytes": 524288,
+          "sha256": "2dedca1c97a7a98925752d24dab3363d0c22ad6da65a85880edb412da761ba5a"
+        },
+        {
+          "git_blob": "8b9dc48e54a6adf6a399a009f60d4c7108390e6a",
+          "bytes": 2396,
+          "sha256": "6628d6f3935622b5838da2144ea81a958081882b36538309a9a23da5e5b244ea"
+        }
+      ]
+    }
+  ],
+  "original_assets": [
+    {
+      "id": 689880280,
+      "name": "Gridworks-7.13.0-to-7.14.0.gwupdate",
+      "bytes": 16814720,
+      "digest": "sha256:5e516e7038023bc7ca180ba51da898ffeac34de2aef42fdecea92b5fce4c4085"
+    },
+    {
+      "id": 689880304,
+      "name": "Gridworks-App-Inventory-7.14.0.json",
+      "bytes": 26367,
+      "digest": "sha256:8c1be56babe763e7829da1fb887753f5cf295d3d9534320cb11bff44f9a6d28b"
+    },
+    {
+      "id": 689880195,
+      "name": "Gridworks-Drift-Coach-Setup.zip",
+      "bytes": 47604649,
+      "digest": "sha256:6e7fd2a6eb7408c78fbcb76252bbbd41288e5d6d5ac2851fac739f9f76ba6dd6"
+    },
+    {
+      "id": 689880320,
+      "name": "SHA256SUMS.txt",
+      "bytes": 302,
+      "digest": "sha256:7443cccab617857261dc61fb4fbbdd0616536f1bdd1b9ee8e900fb78b17716a2"
+    }
+  ]
+}

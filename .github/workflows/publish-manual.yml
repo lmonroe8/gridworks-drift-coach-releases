@@ -1,0 +1,26 @@
+name: Publish 7.14 visual instruction manual
+on:
+  push:
+    branches: [main]
+    paths: [manual-publish-plan.json]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: gridworks-manual-publish
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: github.repository == 'lmonroe8/gridworks-drift-coach-releases'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - name: Check additive document publisher
+        env:
+          GH_TOKEN: test-token-never-forward
+        run: python3 -m unittest discover -s scripts -p 'test_publish_manual.py' -v
+      - name: Publish verified manual and screenshot pack
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 scripts/publish_manual.py
