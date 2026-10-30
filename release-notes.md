@@ -1,38 +1,32 @@
-# Gridworks Drift Coach 7.14.0
+# Gridworks Drift Coach 7.15.0
 
 ## Update
 
-**On 7.13.0:** finish your run, open **App Updates → Check for updates**, then choose **Restart to update** when the download is ready. Your runs, setups, trial dates and license stay in place.
+**On 7.13.0 or 7.14.0:** finish your run, open **App Updates → Check for updates**, then choose **Restart to update** when the download is ready. Existing driver profiles, recordings, setups, trial dates and licenses stay in place.
 
 **New installation or 7.12.2 and earlier:** download **Gridworks-Drift-Coach-Setup.zip**, close Assetto Corsa and Gridworks, extract the ZIP and run **Gridworks-Setup.exe**. Use the existing installation location when upgrading.
 
-The `.gwupdate` and inventory files are used by App Updates; do not open the patch as an installer. GitHub's automatic Source code downloads are not the app.
+The `.gwupdate` files are used by App Updates; do not run them as installers. GitHub's Source code downloads are not the app.
 
 ## What's new
 
-- **Driver profiles:** separate run history, saved setups, notes, training targets and preferences. Existing data stays with Default driver, which you can rename. Drivers on the same PC share its license and trial. Park and finish recordings before switching.
-- **Simpler navigation:** five main sections—Drive, Review, Garage, Practice and Settings—with related pages grouped together.
-- **License management:** an active license hides activation and purchase controls. Remove it locally or use its one move to another PC. Install 7.14 or newer on the destination, copy its Installation ID, complete the move on the licensed PC, and download the replacement license file. Internet access is required for a move; saved driver data stays on the source PC unless you export it separately.
-- **Tandem and scoring:** lead/chase capture through Tandem Link, more than 10 seconds of qualifying drift required for a saved run, and improved transition handling to reduce premature endings. A handbrake pull or momentary transition is not by itself a completed run. Short interrupted attempts do not become qualified results.
-- **Dashboards and overlays:** Minimal, Detailed and Tandem layouts, plus a completed-score display that returns to normal after ten seconds. Profiles save a preferred dashboard; select the actual template in SimHub.
+- **Scoring reliability:** qualifying results require strictly more than ten seconds of qualifying drift. Short crashes and spins do not become scored recordings. Brief transitions and speed dips remain part of the run without adding non-drifting time. Demo, interrupted, truncated and incomplete-course results cannot become clean personal bests. Matching comparisons retain the car, track/layout, compound and scoring rules.
+- **Shareable run cards:** choose **Review → Run review → Export run card** to preview and download a branded 1080 × 1350 PNG. Set the public name before sharing. Private notes and license details are excluded; demo and incomplete recordings are labeled.
+- **Setup wizard:** open **Settings → Setup wizard** for game-folder and live-telemetry checks, optional Car Link, SimHub and tablet steps, and your first clean saved run. Progress resumes after reopening the app. Manual display confirmation is distinguished from a live connection check.
+- **Tandem reconnect fixes:** the reader checks the selected game folder and the installer's saved folder against the live car, track and layout. A brief partial file write no longer discards a still-fresh complete frame. Stale data still expires, and a partner is never silently replaced mid-run. Connection status now appears separately from partner detection.
 
-## Optional components
+The existing ten-second dashboard result display, driver profiles, simpler menu and license controls remain. **The online leaderboard is deferred and is not included.**
 
-App Updates updates the app and bundled downloads. To use updated SimHub displays, open **Settings → Dash settings → Bundled downloads** and import the desired dashboard or overlay. The full installer installs the current templates when SimHub is detected. Install Tandem Link from **Drive → Tandem** if it is not already installed. The app patch does not replace installed game links or Stream Deck plugins.
+## Tandem Link 0.2
 
-The optional Crew Chief voice link is included and off by default. Audible Drift Coach playback still requires validation with your Crew Chief setup; a received message is not confirmation that it was spoken. Crew Chief setup is not required for profiles, scoring or license controls.
+To get the updated in-game status messages, open **Drive → Tandem → Download Tandem Link**. Extract the entire ZIP, close Assetto Corsa and run **Install-Tandem-Link.cmd**. Restart the game, open Gridworks Tandem Link and enable capture. Enable Tandem Mode in Gridworks and save its settings. Drive with the intended partner and wait for **READY** before initiating.
+
+The app update does not automatically replace the installed CSP add-on. Link 0.2 reports waiting, sending and write-error states. If Gridworks reports **Link connected** but no partner is ready, check the nearby-car count, direction of travel and partner selection.
 
 ## Verification and limits
 
-451 core tests, full Chromium workflows, native Windows desktop and installer checks passed. The signed 7.13-to-7.14 patch reconstructs all 199 app files, preserves existing data and the private runtime, and restores the previous install pointer if startup fails. Live driving and physical SimHub displays still depend on your car/mod/device setup; tandem measurements are client telemetry estimates, not calibrated competition judging.
+Automated core, actual Lua exporter, Chromium, native Windows desktop and installer checks cover this update. Signed patches are verified against the target app inventory and tested for preservation of existing data and rollback on failed startup. Synthetic checks do not establish live two-car AC/CSP behavior or physical SimHub rendering; those still need confirmation on the driving rig. Tandem remains observed lead/chase capture and paired review, not calibrated competition judging.
 
-The license service enforces one destination per license. Retrying the same move returns the same replacement. Previous offline copies cannot be remotely revoked.
+The optional Crew Chief voice link remains off by default; audible Drift Coach playback is not part of this update's confirmed live validation.
 
 Seven-day full-app trial, then **$5 once for a lifetime license**. Existing trial dates and licenses are retained.
-
-## Visual instruction manual
-
-- [Download the 49-page PDF instruction manual](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Visual_Instruction_Manual.pdf)
-- [Download the full-size screenshot pack](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Screenshot_Pack.zip)
-
-Covers all 16 app sections, with 39 app views and seven dashboard/overlay examples. The PDF includes clickable contents and step-by-step instructions. The screenshot ZIP includes an HTML gallery and CSV index. Screenshots use demonstration data; SimHub images are native-template previews.
