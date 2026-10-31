@@ -1,6 +1,6 @@
 # Gridworks Drift Coach
 
-**Production release · version 7.15.0**
+**Production release · version 7.16.0**
 
 A standalone Windows app for Assetto Corsa drift practice, setup work, individual run review and a paired tablet display.
 
@@ -10,11 +10,23 @@ A standalone Windows app for Assetto Corsa drift practice, setup work, individua
 
 Choose **Gridworks-Drift-Coach-Setup.zip**, extract it and double-click **Gridworks-Setup.exe**. Setup starts automatically and creates the **Gridworks Drift Coach** shortcut. The ZIP contains setup and the Start Here guide.
 
-**On 7.13.0 or 7.14.0:** finish driving, open **App Updates → Check for updates**, then choose **Restart to update** when ready. The signed update preserves your runs, setups, trial dates and license.
+**On 7.13.0, 7.14.0 or 7.15.0:** finish driving, open **App Updates → Check for updates**, then choose **Restart to update** when ready. The signed update preserves your runs, setups, trial dates and license.
 
 **On 7.12.2 or earlier:** use the full installer once because those versions use an older update-verification key. Close Assetto Corsa and Gridworks, extract the setup ZIP and run **Gridworks-Setup.exe** using the existing installation. Deliberately configured custom update channels are preserved.
 
-### New in 7.15
+### New in 7.16
+
+- Separate **Solo Runs** and **Tandem Runs** tabs in Run Review.
+- **Lead/Chase and partner-name filters**, combined with search and favorites.
+- **Saved review views for each driver**, restored when the app reopens.
+- **First-time app tour** with **Don’t show this again**; restart it from **Settings → Setup wizard**.
+- **Page-specific ? Help** with installed written steps, full guides and optional video links as tutorials become available.
+
+Use **Clear Filters** to reset searches, favorites and tandem filters. Use **Show Current Car + Track** to resume following the live session. No Tandem Link reinstall or SimHub dashboard reimport is needed for this release. **The online leaderboard remains deferred.**
+
+[Read the 7.16 release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.16.0).
+
+### Included from 7.15
 
 More reliable qualifying scores and clean personal-best comparisons, shareable PNG run cards, a resumable setup wizard, and tandem reconnect fixes with clearer connection status. **The online leaderboard is deferred.**
 
@@ -35,7 +47,7 @@ GitHub's automatic **Source code** ZIPs contain this release-channel repository.
 - [Download the 49-page PDF instruction manual](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Visual_Instruction_Manual.pdf)
 - [Download the full-size screenshot pack](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Screenshot_Pack.zip)
 
-This manual documents 7.14. For the new wizard, run cards and tandem connection status, use the installed 7.15 guides and release notes. The manual covers all 16 sections, with clickable contents, step-by-step instructions, 39 app views and seven dashboard/overlay examples. The screenshot pack includes an HTML gallery and CSV index. Screenshots use demonstration data; SimHub images are native-template previews.
+This manual documents 7.14. For the latest wizard, tour, run cards, review filters and tandem connection status, use the installed 7.16 guides and page help. The manual covers all 16 sections, with clickable contents, step-by-step instructions, 39 app views and seven dashboard/overlay examples. The screenshot pack includes an HTML gallery and CSV index. Screenshots use demonstration data; SimHub images are native-template previews.
 
 ## Requirements
 
@@ -88,7 +100,7 @@ Optional SimHub exports, Angle Coach, Stream Deck XL profiles, OBS controls and 
 
 [Report an issue or suggest a feature](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include your app version, car/track, AC/CSP versions, tablet/browser and steps to reproduce the problem.
 
-469 core tests, update interface checks, actual Lua exporter execution, full Chromium workflows, and native Windows desktop/full-installer checks passed for 7.15.0. Both signed patches (7.13-to-7.15 and 7.14-to-7.15) reconstruct all 204 app files, preserve existing user data and the private runtime, and restore the previous install pointer if startup fails. Separate driver profiles were included in migration validation. Live two-car AC/CSP behavior and physical SimHub rendering still need confirmation on the driving rig; synthetic checks are not evidence of those live results.
+488 core tests, update interface checks, actual Lua exporter execution, Chromium workflows, and native Windows desktop/full-installer checks cover 7.16.0. All three signed patches (from 7.13, 7.14 and 7.15) reconstruct the complete 208-file app inventory, preserve existing user data and the private runtime, and restore the previous install pointer if startup fails. The review and help checks cover per-driver persistence, combined filters, stale-profile requests, every page’s instructions and narrow screens. Live two-car AC/CSP behavior and physical SimHub rendering still need confirmation on the driving rig; synthetic checks do not establish those live results.
 
 This repository hosts public releases and signed update feeds. App source is maintained separately in a private repository. Publishing downloads does not grant an open-source license for the app; third-party components retain their own notices and terms.
 
