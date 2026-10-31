@@ -1,32 +1,23 @@
-# Gridworks Drift Coach 7.15.0
+# Gridworks Drift Coach 7.16.0
 
 ## Update
 
-**On 7.13.0 or 7.14.0:** finish your run, open **App Updates → Check for updates**, then choose **Restart to update** when the download is ready. Existing driver profiles, recordings, setups, trial dates and licenses stay in place.
+On **7.13.0, 7.14.0 or 7.15.0**, finish driving, open **App Updates → Check for updates**, then choose **Restart to update** when the download is ready. Driver profiles, recordings, setups, trial dates and licenses stay in place.
 
-**New installation or 7.12.2 and earlier:** download **Gridworks-Drift-Coach-Setup.zip**, close Assetto Corsa and Gridworks, extract the ZIP and run **Gridworks-Setup.exe**. Use the existing installation location when upgrading.
-
-The `.gwupdate` files are used by App Updates; do not run them as installers. GitHub's Source code downloads are not the app.
+For a new installation or an older version, download **Gridworks-Drift-Coach-Setup.zip**, extract it and run **Gridworks-Setup.exe** with Assetto Corsa and Gridworks closed. Keep the existing installation location when upgrading. The `.gwupdate` files are for App Updates, not standalone installers.
 
 ## What's new
 
-- **Scoring reliability:** qualifying results require strictly more than ten seconds of qualifying drift. Short crashes and spins do not become scored recordings. Brief transitions and speed dips remain part of the run without adding non-drifting time. Demo, interrupted, truncated and incomplete-course results cannot become clean personal bests. Matching comparisons retain the car, track/layout, compound and scoring rules.
-- **Shareable run cards:** choose **Review → Run review → Export run card** to preview and download a branded 1080 × 1350 PNG. Set the public name before sharing. Private notes and license details are excluded; demo and incomplete recordings are labeled.
-- **Setup wizard:** open **Settings → Setup wizard** for game-folder and live-telemetry checks, optional Car Link, SimHub and tablet steps, and your first clean saved run. Progress resumes after reopening the app. Manual display confirmation is distinguished from a live connection check.
-- **Tandem reconnect fixes:** the reader checks the selected game folder and the installer's saved folder against the live car, track and layout. A brief partial file write no longer discards a still-fresh complete frame. Stale data still expires, and a partner is never silently replaced mid-run. Connection status now appears separately from partner detection.
+- **Solo and tandem tabs:** Run Review separates solo recordings from runs with a saved tandem partner and starting lead/chase role. A tandem stays in that tab if its link drops later. Older recordings without paired metadata stay under Solo Runs.
+- **Tandem filters:** select Lead, Chase or All roles and search a partner's recorded name. These filters combine with car/track/layout, run search and favorites before pagination. Clear Filters resets searches, favorites and the role without changing the selected run type or car/track.
+- **Your saved review view:** each driver's run type, car/track/layout and filters return when the app reopens. Show Current Car + Track resumes following the live session. Preferences stay with that driver and are included in driver backups.
+- **First-time app tour:** Back and Next walk through the actual app pages. Check Don't show this again to stop automatic invitations; completing the tour also stops them. Restart it any time from Settings → Setup wizard. The tour stays off the paired tablet and does not interrupt driving.
+- **Page help:** choose the ? beside a page title for local written steps and its full guide. Settings → Help & Tutorials searches all topics. Video links can be added as published tutorials become available; unavailable videos are clearly marked, and no video is required to read the instructions.
 
-The existing ten-second dashboard result display, driver profiles, simpler menu and license controls remain. **The online leaderboard is deferred and is not included.**
+Opening a run from another screen selects its matching Solo/Tandem tab. Unsaved note drafts survive tab changes within the open app. Existing recordings and scores are not rewritten.
 
-## Tandem Link 0.2
-
-To get the updated in-game status messages, open **Drive → Tandem → Download Tandem Link**. Extract the entire ZIP, close Assetto Corsa and run **Install-Tandem-Link.cmd**. Restart the game, open Gridworks Tandem Link and enable capture. Enable Tandem Mode in Gridworks and save its settings. Drive with the intended partner and wait for **READY** before initiating.
-
-The app update does not automatically replace the installed CSP add-on. Link 0.2 reports waiting, sending and write-error states. If Gridworks reports **Link connected** but no partner is ready, check the nearby-car count, direction of travel and partner selection.
+The online leaderboard remains deferred. Existing tandem linking, qualifying-run protections and the ten-second dashboard result display remain in place. No Tandem Link reinstall or SimHub dashboard reimport is required for 7.16.0.
 
 ## Verification and limits
 
-Automated core, actual Lua exporter, Chromium, native Windows desktop and installer checks cover this update. Signed patches are verified against the target app inventory and tested for preservation of existing data and rollback on failed startup. Synthetic checks do not establish live two-car AC/CSP behavior or physical SimHub rendering; those still need confirmation on the driving rig. Tandem remains observed lead/chase capture and paired review, not calibrated competition judging.
-
-The optional Crew Chief voice link remains off by default; audible Drift Coach playback is not part of this update's confirmed live validation.
-
-Seven-day full-app trial, then **$5 once for a lifetime license**. Existing trial dates and licenses are retained.
+Automated Python, Chromium, native Windows desktop and installer checks cover the update. Signed patches are reconstructed against the complete target inventory for every supported baseline. Browser data is synthetic; these checks do not establish live two-car AC/CSP behavior or physical dashboard rendering. Tandem remains paired capture and review, not calibrated competition judging. Audible Drift Coach playback through Crew Chief is not part of this update's confirmed live validation.
