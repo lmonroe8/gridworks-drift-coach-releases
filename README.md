@@ -1,6 +1,6 @@
 # Gridworks Drift Coach
 
-**Production release · version 7.16.0**
+**Production release · version 7.17.0**
 
 A standalone Windows app for Assetto Corsa drift practice, setup work, individual run review and a paired tablet display.
 
@@ -10,11 +10,23 @@ A standalone Windows app for Assetto Corsa drift practice, setup work, individua
 
 Choose **Gridworks-Drift-Coach-Setup.zip**, extract it and double-click **Gridworks-Setup.exe**. Setup starts automatically and creates the **Gridworks Drift Coach** shortcut. The ZIP contains setup and the Start Here guide.
 
-**On 7.13.0, 7.14.0 or 7.15.0:** finish driving, open **App Updates → Check for updates**, then choose **Restart to update** when ready. The signed update preserves your runs, setups, trial dates and license.
+**Upgrading from 7.16.0 or an older build/preview:** use the full installer once to include the offline voice pack. Close Assetto Corsa and Gridworks, extract the setup ZIP and run **Gridworks-Setup.exe**. Runs, profiles, courses, setups, trial dates, licenses and voice preferences are preserved. Older builds show an installer-required notice in App Updates. Deliberately configured custom channels are preserved.
 
-**On 7.12.2 or earlier:** use the full installer once because those versions use an older update-verification key. Close Assetto Corsa and Gridworks, extract the setup ZIP and run **Gridworks-Setup.exe** using the existing installation. Deliberately configured custom update channels are preserved.
+**On preview 7.16.95:** App Updates also supports a small signed update to 7.17.0, reusing the installed voice pack and runtime.
 
-### New in 7.16
+### New in 7.17
+
+- **Course editing:** select and move existing targets or gates, edit target type/tolerance, and undo/redo marker changes.
+- **Map controls:** zoom buttons, pointer-centred wheel zoom, drag-to-pan and Fit Map in course and replay maps.
+- **Visible target areas:** real metre radii and configured gate widths, with optional labels/area visibility.
+- **Course Test:** check directed start/finish crossings and target visits from a snapshot of the draft. It does not change the active scoring course or award points.
+- **Offline Gridworks male voice:** 1,001 complete score phrases, a preview button, and independent volume for local male/Windows speech. Crew Chief remains optional and uses its own volume controls.
+- **Score-only announcements:** one final score per run; quiet mode and the next run stop local playback.
+- **Crew Chief readiness and tandem review:** timezone handling, replay-linked observations and clearer run-end evidence.
+
+[Read the 7.17 release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.17.0).
+
+### Included from 7.16
 
 - Separate **Solo Runs** and **Tandem Runs** tabs in Run Review.
 - **Lead/Chase and partner-name filters**, combined with search and favorites.
@@ -47,7 +59,7 @@ GitHub's automatic **Source code** ZIPs contain this release-channel repository.
 - [Download the 49-page PDF instruction manual](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Visual_Instruction_Manual.pdf)
 - [Download the full-size screenshot pack](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Screenshot_Pack.zip)
 
-This manual documents 7.14. For the latest wizard, tour, run cards, review filters and tandem connection status, use the installed 7.16 guides and page help. The manual covers all 16 sections, with clickable contents, step-by-step instructions, 39 app views and seven dashboard/overlay examples. The screenshot pack includes an HTML gallery and CSV index. Screenshots use demonstration data; SimHub images are native-template previews.
+This manual documents 7.14. For the latest wizard, tour, run cards, review filters and tandem connection status, use the installed 7.17 guides and page help. The manual covers all 16 sections, with clickable contents, step-by-step instructions, 39 app views and seven dashboard/overlay examples. The screenshot pack includes an HTML gallery and CSV index. Screenshots use demonstration data; SimHub images are native-template previews.
 
 ## Requirements
 
@@ -100,7 +112,7 @@ Optional SimHub exports, Angle Coach, Stream Deck XL profiles, OBS controls and 
 
 [Report an issue or suggest a feature](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include your app version, car/track, AC/CSP versions, tablet/browser and steps to reproduce the problem.
 
-488 core tests, update interface checks, actual Lua exporter execution, Chromium workflows, and native Windows desktop/full-installer checks cover 7.16.0. All three signed patches (from 7.13, 7.14 and 7.15) reconstruct the complete 208-file app inventory, preserve existing user data and the private runtime, and restore the previous install pointer if startup fails. The review and help checks cover per-driver persistence, combined filters, stale-profile requests, every page’s instructions and narrow screens. Live two-car AC/CSP behavior and physical SimHub rendering still need confirmation on the driving rig; synthetic checks do not establish those live results.
+The 513-test core suite, signed-update checks, actual Lua exporter execution, Chromium workflows, native Windows desktop checks, full-installer upgrade/data preservation, fresh installation and final installer packaging cover 7.17.0. Marker editing, zoom/pan accuracy, world-sized areas, Course Test detection, offline recordings and volume have focused checks. Old updater limits are handled through the full-installer path; the small 7.16.95 patch reuses its installed voice pack. Live game/mod, two-car timing and physical audio/display behavior depend on your rig; automated fixtures do not establish every live configuration.
 
 This repository hosts public releases and signed update feeds. App source is maintained separately in a private repository. Publishing downloads does not grant an open-source license for the app; third-party components retain their own notices and terms.
 
