@@ -1,23 +1,42 @@
-# Gridworks Drift Coach 7.16.0
+# Gridworks Drift Coach 7.18.0
 
-## Update
+## Install this update
 
-On **7.13.0, 7.14.0 or 7.15.0**, finish driving, open **App Updates → Check for updates**, then choose **Restart to update** when the download is ready. Driver profiles, recordings, setups, trial dates and licenses stay in place.
+Use **Gridworks-Drift-Coach-Setup.zip** below for the complete update, including the refreshed SimHub templates and Assetto Corsa Tandem Link. This is the ready-to-install Windows package, not a source-code ZIP.
 
-For a new installation or an older version, download **Gridworks-Drift-Coach-Setup.zip**, extract it and run **Gridworks-Setup.exe** with Assetto Corsa and Gridworks closed. Keep the existing installation location when upgrading. The `.gwupdate` files are for App Updates, not standalone installers.
+1. Finish your session and close Assetto Corsa, Drift Coach and SimHub.
+2. Back up your saved Gridworks data as a precaution. Do not uninstall the existing app or delete its data folder.
+3. Extract the ZIP, open the `Gridworks-Drift-Coach` folder and run `Gridworks-Setup.exe`.
+4. Follow the installer, retaining your existing game and SimHub locations. Open Drift Coach and check that it reports **7.18.0**.
 
-## What's new
+The installer preserves existing profiles, setups, run history and preferences. A source archive or `.patch` file is not needed.
 
-- **Solo and tandem tabs:** Run Review separates solo recordings from runs with a saved tandem partner and starting lead/chase role. A tandem stays in that tab if its link drops later. Older recordings without paired metadata stay under Solo Runs.
-- **Tandem filters:** select Lead, Chase or All roles and search a partner's recorded name. These filters combine with car/track/layout, run search and favorites before pagination. Clear Filters resets searches, favorites and the role without changing the selected run type or car/track.
-- **Your saved review view:** each driver's run type, car/track/layout and filters return when the app reopens. Show Current Car + Track resumes following the live session. Preferences stay with that driver and are included in driver backups.
-- **First-time app tour:** Back and Next walk through the actual app pages. Check Don't show this again to stop automatic invitations; completing the tour also stops them. Restart it any time from Settings → Setup wizard. The tour stays off the paired tablet and does not interrupt driving.
-- **Page help:** choose the ? beside a page title for local written steps and its full guide. Settings → Help & Tutorials searches all topics. Video links can be added as published tutorials become available; unavailable videos are clearly marked, and no video is required to read the instructions.
+## Included
 
-Opening a run from another screen selects its matching Solo/Tandem tab. Unsaved note drafts survive tab changes within the open app. Existing recordings and scores are not rewritten.
+- Independent **numeric-only lead and chase practice scores**, with component breakdowns and telemetry coverage. No letter grades or automatic competition winner.
+- Versioned saved scoring snapshots so new saved results do not silently change when reopened after a later scoring update.
+- Shared completed results in the app, Run Review and SimHub, with the existing ten-second finish display.
+- Locked-partner tandem endings for pit teleports/resets and sustained crash/spin evidence. Missing telemetry does not automatically become bad driving, and motion estimates do not assign collision blame.
+- Clickable review observations and one evidence-based improvement tip per driver.
+- Session progress separated into solo, lead and chase, comparing compatible runs rather than mixing incompatible scoring/settings.
+- Read-only dashboard preview across six layouts and eight synthetic states; preview runs do not affect real statistics.
+- Refreshed SimHub angle guides, clearer partner status, bounded long driver names, and retained original branding/classic controls.
+- Local-driver final-score-only voice behavior. The online leaderboard remains deferred; Event Director remains separate.
 
-The online leaderboard remains deferred. Existing tandem linking, qualifying-run protections and the ten-second dashboard result display remain in place. No Tandem Link reinstall or SimHub dashboard reimport is required for 7.16.0.
+## Existing-user app patch
 
-## Verification and limits
+`Gridworks-7.17.0-to-7.18.0.gwupdate` is for the app's signed updater, not a file to double-click. It supports **7.17.0** and replaces the App tree while keeping the private runtime and saved data. It updates app/bundled exports, not already-installed SimHub templates or Assetto Corsa game-link files. **Use the full installer for the complete 7.18 update.** Older installations should also use the full installer.
 
-Automated Python, Chromium, native Windows desktop and installer checks cover the update. Signed patches are reconstructed against the complete target inventory for every supported baseline. Browser data is synthetic; these checks do not establish live two-car AC/CSP behavior or physical dashboard rendering. Tandem remains paired capture and review, not calibrated competition judging. Audible Drift Coach playback through Crew Chief is not part of this update's confirmed live validation.
+## Validation and limitations
+
+The exact source passed application/browser checks, tandem scoring/end-condition checks, native dashboard binding/export checks, and the Windows desktop/installer workflow. The downloaded installer ZIP, executable and embedded payload hashes were verified. The signed patch was accepted by the 7.17 updater and reconstructed all 222 target App files; success and failed-readiness rollback scenarios preserved saved-data fixtures.
+
+These automated checks do **not** establish real two-car Assetto Corsa/SimHub calibration. Tandem scores remain observed-data practice estimates, and crash detection remains motion-based. Real hardware/multiplayer feedback is still needed.
+
+## Integrity
+
+- Installer ZIP SHA-256: `17ce6d600d61ef5dc351f7389aaa9b7a1a8b726f19615dd1a92e4f16cbb55aef`
+- Embedded setup executable SHA-256: `1cea575e4cd573749574989291d0fcffed1893b3a729a950f2c704458695b100`
+- App patch SHA-256: `3f7c9f8a6bc5a5c31f45dd8c7e7ff298c63c2cb7c5bd7d5e3c4069468709386e`
+
+The existing update trust key and checkout configuration are unchanged. No private signing key is included in downloads or Actions artifacts.
