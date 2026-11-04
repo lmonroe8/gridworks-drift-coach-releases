@@ -1,118 +1,86 @@
 # Gridworks Drift Coach
 
-**Production release · version 7.17.0**
+**Production release · version 7.18.0**
 
-A standalone Windows app for Assetto Corsa drift practice, setup work, individual run review and a paired tablet display.
+A standalone Windows app for original Assetto Corsa drift practice, tandem analysis, setup work, saved run review and a paired tablet display.
 
 ## Download and install
 
-[Download the latest release](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/latest)
+[Download the 7.18 all-in-one Windows installer](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.18.0/Gridworks-Drift-Coach-Setup.zip) · [Release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.18.0)
 
-Choose **Gridworks-Drift-Coach-Setup.zip**, extract it and double-click **Gridworks-Setup.exe**. Setup starts automatically and creates the **Gridworks Drift Coach** shortcut. The ZIP contains setup and the Start Here guide.
+**Use the full installer for this update**, including existing 7.17 users. It refreshes the installed SimHub templates and Assetto Corsa Tandem Link as well as the app.
 
-**Upgrading from 7.16.0 or an older build/preview:** use the full installer once to include the offline voice pack. Close Assetto Corsa and Gridworks, extract the setup ZIP and run **Gridworks-Setup.exe**. Runs, profiles, courses, setups, trial dates, licenses and voice preferences are preserved. Older builds show an installer-required notice in App Updates. Deliberately configured custom channels are preserved.
+1. Finish your session and close Assetto Corsa, Gridworks and SimHub.
+2. Back up saved data as a precaution. Do not uninstall the app or delete its user-data folder.
+3. Extract **Gridworks-Drift-Coach-Setup.zip**, open its **Gridworks-Drift-Coach** folder and run **Gridworks-Setup.exe**.
+4. Retain the existing game/SimHub locations when following setup. Open the desktop shortcut and confirm **7.18.0**.
 
-**On preview 7.16.95:** App Updates also supports a small signed update to 7.17.0, reusing the installed voice pack and runtime.
+The ZIP contains the Windows setup executable and Start Here guide—not development source. Setup preserves existing runs, profiles, courses, setups, trial dates, licenses and preferences.
 
-### New in 7.17
+**App Updates:** a signed **7.17.0 → 7.18.0** patch is available on the existing stable-recovery channel. It updates the app and bundled exports, not already-installed SimHub templates or game-link files. Use the full installer for the complete integration refresh. Older versions also need the full installer. A `.gwupdate` file is handled by the app; do not double-click it or copy it into SimHub.
 
-- **Course editing:** select and move existing targets or gates, edit target type/tolerance, and undo/redo marker changes.
-- **Map controls:** zoom buttons, pointer-centred wheel zoom, drag-to-pan and Fit Map in course and replay maps.
-- **Visible target areas:** real metre radii and configured gate widths, with optional labels/area visibility.
-- **Course Test:** check directed start/finish crossings and target visits from a snapshot of the draft. It does not change the active scoring course or award points.
-- **Offline Gridworks male voice:** 1,001 complete score phrases, a preview button, and independent volume for local male/Windows speech. Crew Chief remains optional and uses its own volume controls.
-- **Score-only announcements:** one final score per run; quiet mode and the next run stop local playback.
-- **Crew Chief readiness and tandem review:** timezone handling, replay-linked observations and clearer run-end evidence.
+GitHub's automatic **Source code** ZIPs contain this release-channel repository. Choose the named installer asset above instead.
 
-[Read the 7.17 release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.17.0).
+## New in 7.18
 
-### Included from 7.16
+- **Two numeric tandem results:** independent lead/chase practice scores, component breakdowns and data-coverage labels. No letter grades or automatic winner.
+- **Stable saved results:** versioned scoring snapshots retain the completed assessment instead of silently changing new saved runs after a scoring update.
+- **Immediate finish results:** shared app/Run Review/SimHub results, retaining the ten-second finish window.
+- **Partner ending conditions:** locked-partner pit teleports/resets and sustained crash/spin evidence end the shared run. Missing telemetry does not automatically fail a driver; motion estimates do not assign collision blame.
+- **Review and progress:** clickable observed events, one evidence-based improvement tip per driver, and compatible solo/lead/chase session comparisons.
+- **Dashboard refresh:** six layouts, eight read-only preview states, angle guides, clearer partner status, bounded long names, and original branding/classic controls preserved.
 
-- Separate **Solo Runs** and **Tandem Runs** tabs in Run Review.
-- **Lead/Chase and partner-name filters**, combined with search and favorites.
-- **Saved review views for each driver**, restored when the app reopens.
-- **First-time app tour** with **Don’t show this again**; restart it from **Settings → Setup wizard**.
-- **Page-specific ? Help** with installed written steps, full guides and optional video links as tutorials become available.
+Local voice still announces the local driver's final score only. **The online leaderboard remains deferred. Event Director remains separate.** Tandem scoring is observed-data practice feedback, not official competition judging.
 
-Use **Clear Filters** to reset searches, favorites and tandem filters. Use **Show Current Car + Track** to resume following the live session. No Tandem Link reinstall or SimHub dashboard reimport is needed for this release. **The online leaderboard remains deferred.**
+## Existing capabilities
 
-[Read the 7.16 release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.16.0).
+Separate Solo/Tandem Run Review tabs, lead/chase and partner filters, saved views, run cards, driver profiles, setup guides/import/export, course authoring and Course Test, zoomable review maps, a resumable setup wizard, first-time tour with Don't show this again, and page-specific Help remain included.
 
-### Included from 7.15
+The offline male voice pack, local voice volume and optional Crew Chief integration remain included. Optional SimHub dashboards/overlays, Stream Deck XL profiles, OBS controls and icons are bundled. Open **Settings → Setup wizard** for guided setup.
 
-More reliable qualifying scores and clean personal-best comparisons, shareable PNG run cards, a resumable setup wizard, and tandem reconnect fixes with clearer connection status. **The online leaderboard is deferred.**
-
-Open **Settings → Setup wizard** for guided setup, or **Review → Run review → Export run card** to share a saved result. For updated in-game status messages, download **Tandem Link 0.2** from **Drive → Tandem**, extract the complete kit and run its installer with Assetto Corsa closed. The app update does not replace the installed CSP add-on.
-
-[Read the 7.15 release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.15.0).
-
-### Included from 7.14
-
-Driver profiles keep personal runs, setups and preferences separate. Your existing data is in Default driver. Five main menu groups replace the long tab list. Active licenses offer local removal or one move to another PC. This update also includes tandem capture, improved run qualification and transition handling, alternate dashboards/overlays and a ten-second score display.
-
-[Read the 7.14 release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.14.0) for optional SimHub and Tandem Link installation steps.
-
-GitHub's automatic **Source code** ZIPs contain this release-channel repository. Use the named installer/update assets for the app.
-
-## Visual instruction manual — 7.14 reference
-
-- [Download the 49-page PDF instruction manual](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Visual_Instruction_Manual.pdf)
-- [Download the full-size screenshot pack](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Screenshot_Pack.zip)
-
-This manual documents 7.14. For the latest wizard, tour, run cards, review filters and tandem connection status, use the installed 7.17 guides and page help. The manual covers all 16 sections, with clickable contents, step-by-step instructions, 39 app views and seven dashboard/overlay examples. The screenshot pack includes an HTML gallery and CSV index. Screenshots use demonstration data; SimHub images are native-template previews.
+Earlier notes: [7.17](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.17.0), [7.16](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.16.0), [7.15](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.15.0), [7.14](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.14.0).
 
 ## Requirements
 
-- **Windows 10/11 x64** and original **Assetto Corsa**.
-- **Content Manager and CSP** for the supported full car/setup workflow.
-- **Microsoft WebView2 Runtime** for the desktop window. Setup reuses it or installs Microsoft's signed runtime once when missing.
-- **SimHub** is optional for its native dashboards and angle overlay.
-- A tablet, Stream Deck XL, OBS and a second display are optional.
+- Windows 10/11 x64 and original Assetto Corsa.
+- Content Manager and CSP for the supported full car/setup workflow.
+- Microsoft WebView2 Runtime for the desktop window; setup reuses it or installs Microsoft's signed runtime when missing.
+- SimHub is optional for native dashboards and overlays. A tablet, Stream Deck XL, OBS and a second display are optional.
 
 Private runtimes are included. Keep the PC app open while recording and using the tablet.
 
 ## Seven-day full-app trial, then $5 lifetime
 
-Try every feature for **seven calendar days from the first trial-enabled launch**. Updating from 7.12.1 preserves the original trial dates and existing lifetime licenses; it does not start another trial. Closing the app does not pause the trial.
+The full-app trial lasts seven calendar days from the first trial-enabled launch. Closing the app does not pause it. Updating preserves the original trial dates and existing lifetime licenses; it does not start another trial.
 
-After the trial, a **$5 USD one-time lifetime license** restores full access, with **no subscription or expiry**. Live coaching and recording, new setup/course work and the paired tablet require trial or licensed access. Saved runs and setups stay readable/exportable; backups, support, app updates and activation remain available. License includes saved setup downloads even without a connected car.
+After the trial, a **$5 USD one-time lifetime license** restores full access with no subscription or expiry. Live coaching/recording, new setup/course work and the paired tablet require trial or licensed access. Saved runs/setups remain readable and exportable; backups, support, updates and activation remain available. License includes saved setup downloads without a connected car.
 
-Open **Settings → License → Buy $5 lifetime license** to purchase through Stripe. Checkout uses the verified signed release configuration and includes this PC's random installation reference. Use an email address you can receive mail at. After verified settled payment, the hosted service emails a ZIP containing your signed `.gwlicense` file. Extract the ZIP and import that file in the License page. The seven-day trial stays inside Gridworks; checkout is a one-time payment. Sandbox licenses do not activate the public app. Keep your license file and installation ID private.
+Open **Settings → License → Buy $5 lifetime license** for Stripe checkout. The verified signed release configuration supplies checkout and includes this PC's random installation reference. Use an email address you can receive mail at. After verified settled payment, the hosted service emails a ZIP containing the signed `.gwlicense` file. Extract it and import the license in the app. Sandbox licenses do not activate the public app. Keep license files and installation IDs private.
 
-Trial dates and activated licenses survive app updates and normal reinstallations that retain the user-data folder. Trial tracking is local. License management stays on the PC; codes, customer names and installation identity are excluded from telemetry and diagnostics. User-data backups exclude activation and trial records.
+Normal updates/reinstalls that retain user data preserve activation and trial dates. Trial tracking is local; license management stays on the PC. Codes, customer names and installation identity are excluded from telemetry and diagnostics. User-data backups exclude activation and trial records.
 
-## Tablet display
+## Tablet
 
-Open **Settings → Tablet → Enable tablet display**. The page shows the tablet address, QR code, six-digit pairing code and copy buttons.
+Open **Settings → Tablet → Enable tablet display** for the address, QR code, six-digit pairing code and copy buttons. Use the same home network, scan the QR code or open the address, then enter the pairing code. Codes expire after ten minutes; paired browsers reconnect for thirty days, including after app restarts.
 
-Use the same home network for both devices. Scan the QR code, or open the displayed address in the tablet browser and enter the code. Codes expire after ten minutes; paired browsers reconnect for thirty days, including after app restarts.
+The tablet shows driving information, a quick latest-run summary and short setup checklists. Full traces, replay, detailed analysis and setup review remain in the PC app. Fullscreen, screen lock, reconnect status and Private-network firewall help are included.
 
-The tablet switches between driving, a quick latest-run summary and short setup checklists. After a run it shows the score, mean angle, duration and one next-run focus. Full replay, transitions, score details, recent runs and complete setup review stay in the PC app’s **Pit screen** and **Run review**. The tablet does not load full run traces or analysis.
+## Scoring and saved data
 
-The tablet also includes manual screen lock, fullscreen, a reconnect indicator, address selection and Private-network firewall help. Keep Gridworks open on the PC.
+Practice estimates and authored-course scores remain distinct. Course scoring requires defined targets/gates; vehicle-centre line and automated style are estimates. Interrupted runs use the telemetry captured before the interruption. No automatic collision blame or invented deductions for missing evidence.
 
-## Coaching and review
+New saved runs require **more than ten seconds of qualifying drift**, not merely ten seconds of elapsed recording. Short/nonqualifying attempts are excluded from saved history and the completed-score display. Save/analysis failures show an explicit retryable state. Driver profiles keep personal runs, setups and preferences separate.
 
-- **Qualified run results:** sustained straightening, returning to pits or another detected interruption ends the attempt. Transitions and handbrake inputs receive a recovery window; a momentary transition alone does not finish a run. The finish reason and whether the attempt qualified are shown.
-- **Drift practice estimate:** **Angle target 60 / Angle control 25 / Drift continuity 15** gives free practice an immediate result without requiring an authored course. It uses captured telemetry and is clearly labelled as an estimate.
-- **Course qualifying practice:** independent **Line 40 / Angle 40 / Estimated style 20** scoring when an authored course and required gate coverage are available. Damgam ingestion has been removed.
-- **Course editor:** turn a recorded route into directed start/finish gates and inner/outer targets; save revisions and import/export profiles.
-- **Run review:** inspect deductions at their replay timestamps, individual transitions, driver inputs and selected ranges. Compare eligible runs with a matching best.
-- **Setup Lab:** six starting guides, baselines/revisions and setup import/export, with evidence and uncertainty shown.
-- **Session view:** latest result, next-run focus and detail panels that open when needed.
-- **Data tools:** reviewed backups/restores, diagnostics, notes, favorites, search, reference comparisons and prepared support messages.
+## Guides
 
-A completed authored-course score replaces the immediate estimate once full analysis is ready. Practice estimates and course scores are labelled separately and are not mixed in course bests. Interrupted runs use only telemetry captured before the interruption.
-
-New saved runs require **more than ten seconds of qualifying drift**, not merely ten seconds of elapsed recording. Short or nonqualifying attempts are excluded from run history and the completed-score display. The finish reason remains available. A background save or analysis error shows an explicit retryable state. Vehicle-centre line and automated style are estimates. This is independent practice feedback, not official competition judging or licensed UDSM.
-
-Optional SimHub exports, Angle Coach, Stream Deck XL profiles, OBS controls and icons remain bundled. When upgrading from 7.10.2 or earlier, reimport the optional **Gridworks Sim Center** companion from Bundled downloads once for its qualifying-practice page.
+Use installed 7.18 guides and page Help for the current features. The older [49-page visual manual](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Visual_Instruction_Manual.pdf) and [screenshot pack](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Screenshot_Pack.zip) remain available as **7.14 references**, not updated 7.18 manuals. Their screenshots use demonstration data and native-template previews.
 
 ## Support and validation
 
-[Report an issue or suggest a feature](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include your app version, car/track, AC/CSP versions, tablet/browser and steps to reproduce the problem.
+[Report an issue or suggest a feature](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include the app version, car/track, AC/CSP versions, display/browser and reproduction steps.
 
-The 513-test core suite, signed-update checks, actual Lua exporter execution, Chromium workflows, native Windows desktop checks, full-installer upgrade/data preservation, fresh installation and final installer packaging cover 7.17.0. Marker editing, zoom/pan accuracy, world-sized areas, Course Test detection, offline recordings and volume have focused checks. Old updater limits are handled through the full-installer path; the small 7.16.95 patch reuses its installed voice pack. Live game/mod, two-car timing and physical audio/display behavior depend on your rig; automated fixtures do not establish every live configuration.
+The exact 7.18 source passed automated application/browser, tandem scoring/end-condition, native dashboard binding/export, Windows desktop, upgrade/install and final packaging checks. The published installer/patch sizes and SHA-256 digests match the verified artifacts. The signed patch was accepted by the 7.17 client and reconstructed all 222 target App files; success and failed-readiness rollback scenarios preserved saved-data fixtures.
 
-This repository hosts public releases and signed update feeds. App source is maintained separately in a private repository. Publishing downloads does not grant an open-source license for the app; third-party components retain their own notices and terms.
+**Real two-car Assetto Corsa/SimHub calibration and every physical audio/display configuration are not established by automated tests.** Crash detection is motion-based, and scores remain practice estimates. Real hardware/multiplayer feedback is still needed.
 
+This repository hosts public downloads and signed feeds. App source stays in a separate private repository. Publishing downloads does not grant an open-source license for the app; third-party notices and terms remain applicable.
