@@ -20,8 +20,10 @@ REPO=os.environ['GITHUB_REPOSITORY']
 if REPO!='lmonroe8/gridworks-drift-coach-releases':raise SystemExit('Unexpected release repository')
 API='https://api.github.com/repos/'+REPO
 TOKEN=os.environ['GH_TOKEN']
-MAX_RELEASE_ASSET=64_000_000
-MAX_TRANSPORT_BYTES=66_000_000
+# 7.18 includes the verified native desktop payload (126,213,418-byte installer ZIP).
+# Keep explicit bounded reads, checksums, endpoint isolation and immutable assets.
+MAX_RELEASE_ASSET=128_000_000
+MAX_TRANSPORT_BYTES=130_000_000
 
 def api(url,method='GET',body=None,kind='application/json'):
     parsed=urllib.parse.urlsplit(url)

@@ -57,11 +57,19 @@ class TransportTests(unittest.TestCase):
         entry={k:v for k,v in self.entry.items() if k!='artifact_transport_blob'}
         entry['chunks']=[dict(git_blob='a'*40,bytes=len(self.payload),sha256=entry['sha256'])]
         with patch.object(p,'transfer_blob',return_value=self.payload):self.assertEqual(p.asset_bytes(entry),self.payload)
+    def test_oversized_transport_rejected_before_download(self):
+        for size in (p.MAX_TRANSPORT_BYTES,p.MAX_TRANSPORT_BYTES+1,0,-1):
+            with self.subTest(size=size),self.assertRaisesRegex(ValueError,'limits'):
+                self.execute(ticket={**self.ticket,'bytes':size})
 class AssetLimitsTests(unittest.TestCase):
     def test_current_installer_size_is_supported(self):
-        p.validate_asset(dict(name='Gridworks-Drift-Coach-Setup.zip',bytes=47_604_649))
+        for size in (47_604_649,126_213_418,106_868_264):
+            p.validate_asset(dict(name='Gridworks-Drift-Coach-Setup.zip',bytes=size))
+    def test_limits_remain_explicit_and_bounded(self):
+        self.assertEqual(p.MAX_RELEASE_ASSET,128_000_000)
+        self.assertEqual(p.MAX_TRANSPORT_BYTES,130_000_000)
     def test_invalid_or_unbounded_assets_are_rejected(self):
-        for size in (0,-1,64_000_000,True,'47604649'):
+        for size in (0,-1,p.MAX_RELEASE_ASSET,p.MAX_RELEASE_ASSET+1,True,'47604649'):
             with self.subTest(size=size),self.assertRaises(ValueError):
                 p.validate_asset(dict(name='Gridworks-Drift-Coach-Setup.zip',bytes=size))
         with self.assertRaises(ValueError):p.validate_asset(dict(name='../private.pem',bytes=100))
