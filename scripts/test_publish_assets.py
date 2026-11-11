@@ -63,11 +63,11 @@ class TransportTests(unittest.TestCase):
                 self.execute(ticket={**self.ticket,'bytes':size})
 class AssetLimitsTests(unittest.TestCase):
     def test_current_installer_size_is_supported(self):
-        for size in (47_604_649,126_213_418,106_868_264):
+        for size in (47_604_649,126_213_418,106_868_264,135_830_000):
             p.validate_asset(dict(name='Gridworks-Drift-Coach-Setup.zip',bytes=size))
     def test_limits_remain_explicit_and_bounded(self):
-        self.assertEqual(p.MAX_RELEASE_ASSET,128_000_000)
-        self.assertEqual(p.MAX_TRANSPORT_BYTES,130_000_000)
+        self.assertEqual(p.MAX_RELEASE_ASSET,138_000_000)
+        self.assertEqual(p.MAX_TRANSPORT_BYTES,140_000_000)
     def test_invalid_or_unbounded_assets_are_rejected(self):
         for size in (0,-1,p.MAX_RELEASE_ASSET,p.MAX_RELEASE_ASSET+1,True,'47604649'):
             with self.subTest(size=size),self.assertRaises(ValueError):
@@ -82,5 +82,6 @@ class ProductionReleaseTests(unittest.TestCase):
     def test_beta_tag_cannot_be_relabelled_as_production(self):
         with self.assertRaises(ValueError):p.release_options(dict(schema=1,tag='beta-2.0.7.11.0',prerelease=False))
 if __name__=='__main__':unittest.main()
+
 
 
