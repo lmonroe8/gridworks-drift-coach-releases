@@ -1,3 +1,4 @@
-6e7fd2a6eb7408c78fbcb76252bbbd41288e5d6d5ac2851fac739f9f76ba6dd6  Gridworks-Drift-Coach-Setup.zip
-5e516e7038023bc7ca180ba51da898ffeac34de2aef42fdecea92b5fce4c4085  Gridworks-7.13.0-to-7.14.0.gwupdate
-8c1be56babe763e7829da1fb887753f5cf295d3d9534320cb11bff44f9a6d28b  Gridworks-App-Inventory-7.14.0.json
+2ff9417e72d7da7c800ac93e5919fda16967a9d81d199f00207cb24cb81975a4  Gridworks-Drift-Coach-Setup.zip
+c909520250ed38a13294c823e8b9e646a0ee90ef87fbea73094e2576300d51d3  Gridworks-7.18.0-to-7.19.0.gwupdate
+b34b059e07c10629a21799f0f0f0495b0042870887337514671a069e9e0c58bc  Gridworks-7.17.0-to-7.19.0.gwupdate
+c1b36c5ec5b046c8c802b2a81b6c1e15156dc1c1dbf58ff3f2449ebd8f80ccad  Gridworks-Small-Update-7.19.0.zip
