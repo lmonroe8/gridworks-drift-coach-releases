@@ -1,16 +1,16 @@
 # Gridworks Drift Coach
 
-**Production release · version 7.19.0**
+**Production release · version 7.19.1**
 
 A standalone Windows app for original Assetto Corsa drift practice, tandem analysis, setup work, saved run review and a paired tablet display.
 
 ## Update from inside the app
 
-Installed **7.17.0 and 7.18.0** can update directly to 7.19.0 through **App Updates**. The 7.18 update is approximately **21 MB** and reuses the installed runtime.
+Installed **7.17.0, 7.18.0 and 7.19.0** can update directly to **7.19.1** through **App Updates**. This repairs the missing `Dashboard-Preview/Detailed-Dash.json` error encountered during some 7.19 updates. The 7.18 update is approximately **21.1 MB**; the 7.19 repair is approximately **145 KB**. Both reuse the installed runtime.
 
 1. Open **App Updates → Check for updates**. Choose **Download update** if it has not started automatically.
 2. Finish driving, close Assetto Corsa, and select **Restart to update** when ready.
-3. Confirm **7.19.0**, then close Assetto Corsa, SimHub and Stream Deck.
+3. Confirm **7.19.1**. If upgrading from 7.17 or 7.18, close Assetto Corsa, SimHub and Stream Deck before completing steps 4–5. Components already updated to 7.19 need no reimport for this repair.
 4. In App Updates, choose **Apply component updates**. These verified files are included in the download; protected folders may show **Allow Windows permission**.
 5. Choose **Import Session XL layout**, reopen Stream Deck and select **Gridworks Session XL** for the two-page controls.
 
@@ -18,11 +18,15 @@ Existing customized Stream Deck profiles are preserved. Normal upgrades preserve
 
 ## New installation
 
-[Download the 7.19 all-in-one Windows installer](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.0/Gridworks-Drift-Coach-Setup.zip) · [Full release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.0)
+[Download the 7.19.1 all-in-one Windows installer](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.1/Gridworks-Drift-Coach-Setup.zip) · [Full release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.1)
 
 Download **Gridworks-Drift-Coach-Setup.zip**, extract it, open the **Gridworks-Drift-Coach** folder and run **Gridworks-Setup.exe**. The ZIP contains the installer and Start Here guide. Older builds that report **Installer needed** also use this download.
 
 The release also provides a **Small Update ZIP for installed 7.18.0** if its in-app connection is unavailable. Normal updates use App Updates. The `.gwupdate` assets are handled by the app's signed updater.
+
+## Fixed in 7.19.1
+
+Earlier full installers omitted six packaged dashboard-preview files. The 7.19 app patch incorrectly assumed those files were installed and could fail before switching versions. 7.19.1 carries all six verified files in the patch and includes them in new installations. No manual file repair or saved-data deletion is needed. Release validation now uses each older installer's actual App staging output as well as complete prior-patch inventory fixtures.
 
 ## New in 7.19
 
@@ -44,7 +48,7 @@ Separate Solo/Tandem Run Review tabs, lead/chase and partner filters, saved view
 
 The offline male voice pack, local voice volume and optional Crew Chief integration remain included. Optional SimHub dashboards/overlays, Stream Deck XL profiles, OBS controls and icons are bundled. Open **Settings → Setup wizard** for guided setup.
 
-Earlier notes: [7.18](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.18.0), [7.17](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.17.0), [7.16](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.16.0), [7.15](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.15.0), [7.14](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.14.0).
+Earlier notes: [7.19](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.0), [7.18](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.18.0), [7.17](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.17.0), [7.16](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.16.0), [7.15](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.15.0), [7.14](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.14.0).
 
 ## Requirements
 
@@ -85,9 +89,8 @@ Use installed 7.19 guides and page Help for the current features. The older [49-
 
 [Report an issue or suggest a feature](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include the app version, car/track, AC/CSP versions, display/browser and reproduction steps.
 
-The 7.19 package matches the verified application sources, guides, integration payloads and two-page Stream Deck profile. Both supported versions' shipped updaters accept the signed manifest and reconstruct all 253 target App files. Success and failed-readiness rollback fixtures preserve the prior installation and saved data. The public release assets have independently checked sizes and SHA-256 digests. See the release notes for validation scope and the remaining driving-PC checks.
+The 7.19.1 repair was verified against the exact published 7.17, 7.18 and 7.19 installer payloads. Each payload's real App staging function and unchanged shipped updater were exercised. All 12 installer-origin/prior-patch-origin success and rollback scenarios reconstruct all 253 target App files and preserve the old App/runtime and saved-data fixtures. The full installer verifier checks complete App parity and all six installed preview routes. The public assets have checked sizes and SHA-256 digests. See the release notes for validation scope and the remaining driving-PC checks.
 
 **Real two-car AC/CSP calibration, intended-mod setup tests, physical SimHub/Stream Deck import, actual OBS clip paths and Windows component permissions still need driving-rig validation.** The signed-update reconstruction uses explicit process/readiness fixtures and does not claim a live Windows restart. Scores remain practice estimates.
 
 This repository hosts public downloads and signed feeds. App source stays in a separate private repository. Publishing downloads does not grant an open-source license for the app; third-party notices and terms remain applicable.
-
