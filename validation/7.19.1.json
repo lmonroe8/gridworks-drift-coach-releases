@@ -455,5 +455,45 @@
   },
   "sourceMergeCommit": "f4fc95ca9ee2aadc699b777bd62f1d66a7c3af00",
   "testedSourceTree": "eb015c0502e4eb5a2c14fa9d3a124892c047ce94",
-  "mergedTreeEqualsTestedTree": true
+  "mergedTreeEqualsTestedTree": true,
+  "publicFeedVerification": {
+    "passed": true,
+    "version": "7.19.1",
+    "channel": "stable",
+    "signatureVerified": true,
+    "manifestSha256": "0f0df6adf722c7bfb1bd613d048abd956535a8982061de771d86fdf0a8e9c867",
+    "publishedBases": [
+      "7.17.0",
+      "7.18.0",
+      "7.19.0"
+    ]
+  },
+  "publicUpdateDelivery": {
+    "passed": true,
+    "baseline": "7.18.0",
+    "target": "7.19.1",
+    "actualInstallerStaged": true,
+    "unchangedShippedUpdater": true,
+    "livePublicFeedUsed": true,
+    "livePublicPatchDownloaded": true,
+    "priorCachedRelease": "7.19.0",
+    "initialState": "error",
+    "finalState": "ready",
+    "targetAppFilesVerified": 253,
+    "patchBytes": 21115113,
+    "patchSha256": "1a8c368e12e7e746bdeb426749ca850ffd4625e4024c7a5983267b1b7308c670",
+    "manifestSha256": "0f0df6adf722c7bfb1bd613d048abd956535a8982061de771d86fdf0a8e9c867",
+    "priorInstallStillActive": true,
+    "savedDataFixturePreserved": true,
+    "activationAttempted": false,
+    "nativeWindowsRestartTested": false
+  },
+  "publicRelease": {
+    "id": 442201513,
+    "tag": "v7.19.1",
+    "url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.1",
+    "latest": true,
+    "allSixAssetDigestsVerified": true,
+    "publisherRun": 43101834224
+  }
 }
