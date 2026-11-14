@@ -1,66 +1,60 @@
-# Gridworks Drift Coach 7.19.1 — update repair
+# Gridworks Drift Coach 7.19.2
 
-**7.19.1 fixes the missing dashboard-preview file error during in-app updates.** It includes all 7.19 features and the two-page Session XL profile.
+## Setup Test progress and VDC 6.0
 
-## Update through the app
+This update repairs Setup Test progress after temporary save or file-read errors, makes each completed run's outcome visible, and updates the garage to identify VDC 6.0 separately from older or unknown installed versions.
 
-If your update stopped with `No such file or directory` for `App\\Dashboard-Preview\\Detailed-Dash.json`:
+### Runs recover after a successful save retry
 
-1. Open **App Updates → Check for updates** and confirm the offered version is **7.19.1**.
+A failed save stays pending while you use **Retry Save**. After the retry succeeds, Setup Test checks the recording again. Temporary file-read errors also remain retryable. Older active tests containing the specific temporary-save exclusion can recover that run without relaxing the evidence requirements.
+
+The counter now shows whether the app is **collecting, recording, saving or checking**. The latest completed-run outcome appears directly below it, including an exclusion reason and a link to the saved run when available. A completion refresh arriving during another request is queued, and active collection no longer displays the start-only instruction to park the car.
+
+The three-run gate, three-second qualifying recording minimum and matching requirements remain in place. A saved run can still be excluded when its evidence or recorded conditions do not meet the test requirements; the visible reason explains that decision.
+
+### The garage recognizes declared VDC 6.0 identity
+
+The garage separates the **installed car's declared version** from the **latest known public pack, VDC 6.0**. It identifies VDC 5.0 as legacy and leaves unknown or conflicting metadata explicit. A generic VDC car name does not automatically become version 6.0.
+
+Current setup values and available controls come from the installed car. Historical 5.0 targets are not relabeled as validated 6.0 tunes. When the detected pack or car revision changes, the garage refreshes its selection and asks you to recheck the current controls. The previous saved checklist is retained until you save a replacement.
+
+### Setup Tests retain the pack identity
+
+New tests retain the declared pack/version identity alongside their baseline. A detected change blocks further collection or a cross-version retest and locks the previous proposal until you restore the matching context or start a fresh baseline.
+
+Legacy tests keep their history without being assigned a pack version retrospectively. Start a fresh baseline after changing packs. Identity metadata does not verify that a mod's underlying physics are unchanged.
+
+## Update to 7.19.2
+
+Direct signed app updates support installed **7.17.0, 7.18.0, 7.19.0 and 7.19.1**. The patches retain the existing production trust configuration and reuse the installed runtime. Driver profiles, runs, courses, setups, preferences, trial dates and licenses remain outside the app's version folder.
+
+1. Open **App Updates → Check for updates** and confirm that the offered version is **7.19.2**.
 2. Choose **Download update** if it has not started automatically.
-3. Finish driving, close Assetto Corsa, and choose **Restart to update**.
-4. Confirm the app reports **7.19.1**.
+3. Finish driving, close Assetto Corsa and choose **Restart to update**.
+4. Confirm **7.19.2** after the app restarts.
 
-The failed 7.19 preparation leaves the old installation active. No manual preview-file creation, uninstall or saved-data deletion is required.
+If the in-app connection is unavailable, the [Small Update ZIP](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.2/Gridworks-Small-Update-7.19.2.zip) supports the same four starting versions. Extract it, close Assetto Corsa and run **Update-Gridworks.cmd**. The `.gwupdate` files are handled by the signed updater.
 
-| Installed build | Direct update to 7.19.1 |
-|---|---:|
-| 7.17.0 | 26.4 MB |
-| 7.18.0 | 21.1 MB |
-| 7.19.0 | 145 KB |
+For a new installation or an **Installer required** notice, use the [all-in-one Windows installer](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.2/Gridworks-Drift-Coach-Setup.zip). Extract the ZIP, open **Gridworks-Drift-Coach** and run **Gridworks-Setup.exe**. The download contains the installer and Start Here guide.
 
-These are signed app patches that reuse the installed private Python runtime. Existing driver profiles, saved runs, setups, settings, trial dates and licenses remain in place.
+### Components when upgrading from 7.17 or 7.18
 
-## What was corrected
+After the app restart, close Assetto Corsa, SimHub and Stream Deck. In **App Updates**, choose **Apply component updates**, then explicitly choose **Import Session XL layout**. Reopen Stream Deck and select **Gridworks Session XL** for its two pages. Protected folders may show **Allow Windows permission**. Customized Stream Deck profiles are preserved.
 
-The 7.18 and 7.19 installer packages contained six dashboard-preview files, but their installer did not copy that folder into the installed App. The patch builder compared package contents and omitted those unchanged files. The old updater then failed while preparing the new version.
+Components already updated for 7.19 need no additional dashboard or Stream Deck profile import for 7.19.2. This patch changes the app and its help.
 
-The corrected patch supplies all six authenticated preview files, even if their bytes match the old package. New full installations validate and copy the folder. Existing signature verification, archive checks and file-inventory validation remain enforced.
+## The 7.19.1 dashboard-preview repair remains included
 
-The earlier release test missed the defect because it constructed a complete baseline directly from package contents. Validation now executes each older installer's actual `Install-AppPayload` function and uses its unchanged shipped updater. A separate complete-inventory fixture covers installations created by earlier app patches.
+Earlier full installers omitted six packaged dashboard-preview files. An app update could then fail with a missing `Dashboard-Preview/Detailed-Dash.json` error before switching versions. The repair carries all six authenticated preview files in supported patches and includes them in new installations. No manual preview-file repair or saved-data deletion is required.
 
-## Components and two-page Stream Deck
+The other 7.19 features remain included: the ten-second result hold, private standings, automatic Track Library, local run clips, two-page Session XL and controlled component updates. Event Director remains separate.
 
-When upgrading from 7.17 or 7.18, after the app restarts:
+## Validation
 
-1. Close Assetto Corsa, SimHub and Stream Deck.
-2. In **App Updates**, choose **Apply component updates**.
-3. Choose **Import Session XL layout**, reopen Stream Deck and select **Gridworks Session XL**.
+Release checks passed for the 7.19.2 source tree shared by the release commit and merged main. [Windows desktop CI](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43632572261) passed native WebView2 startup/shutdown, full-installer upgrade, standalone installation and installer packaging; [App checks](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43632572231) also passed. The final local installer ZIP contains exactly the installer and Start Here guide, and its embedded payload and all seven staged release-file checksums match the verified artifacts. Signed-update validation passed all **16 success/rollback scenarios** across **7.17.0, 7.18.0, 7.19.0 and 7.19.1**, using both actual installer staging and explicitly modeled prior-patch origins. Every reconstructed target matched all **253 App files** byte for byte; runtime bytes and saved-data fixtures were preserved. These checksum results cover the final local release files, before public download verification.
 
-The two pages are **Drive & Review** and **Setup & OBS**, with native gold page-switch controls. Existing customized profiles are preserved. Components already updated to 7.19 need no reimport for this packaging repair.
+Regression checks cover save failure and retry, recovery of eligible older exclusions, temporarily unreadable recordings, final setup-sample waiting, recorder-to-archive acceptance, duplicate prevention, pack changes with identical raw setup values, legacy journals, blocked cross-version retests, installed-metadata refresh and queued browser refreshes.
 
-## Downloads
+Automated checks do not establish live VDC 6.0 handling or physical-rig behavior. Signed-update reconstruction uses explicit process/readiness fixtures; real AC/CSP driving and device testing remain necessary. Scores remain practice estimates.
 
-- **Gridworks-Drift-Coach-Setup.zip**: the complete 7.19.1 installer for new installations or older unsupported builds. Extract it and run `Gridworks-Setup.exe`.
-- **Gridworks-Small-Update-7.19.1.zip**: offline fallback specifically for installed **7.18.0**. Extract and run `Update-Gridworks.cmd`.
-- **.gwupdate files**: handled by the app's signed updater.
-- **SHA256SUMS.txt**: checksums of all five downloads.
-
-The usual path for supported installed builds is **App Updates**.
-
-## Verification
-
-- Reproduced the exact original missing-`Detailed-Dash.json` failure with the published 7.18 installer's real output, its unmodified updater and the authentic signed 7.19 patch.
-- **17 focused Python checks** and **72 PowerShell bundle checks** passed.
-- **12 signed upgrade/rollback scenarios** passed across 7.17, 7.18 and 7.19, covering both real full-installer output and complete prior-patch inventory fixtures.
-- The corrected full installer and every prepared update match all **253 target App files**. Each signed scenario preserves **34 runtime files**, **11 saved-data fixtures** and the old installation.
-- All six preview HTTP routes work from the installed App. Missing or malformed previews fail installer preflight before App files are staged.
-- The full installer verifier passed PE/bootstrap, exact embedded payload, bundled downloads, runtime checksum and both native Session XL pages.
-- Exact-commit CI passed **550 core tests with three skips**, functional browser checks, native Windows app launch, full installer upgrade and clean standalone installation.
-- An independent package comparison found exactly six intended payload-file changes. All **692 native/runtime/integration assets**, including all 91 desktop-host files and the two-page profile, are byte-identical to 7.19.0.
-
-GitHub Actions artifact uploads still failed because the account storage quota is full, so its dependent package job was skipped. The release installer was rebuilt and fully verified separately using the unchanged validated 7.19 native host; public release transfers are checksum-verified.
-
-Portable signed activation tests use explicit process/readiness fixtures; they do not claim a live Windows restart. Real AC/CSP driving, intended-mod setup behavior, physical SimHub/Stream Deck, OBS clip paths and driving-PC component permissions retain the 7.19 validation limits. Results remain practice estimates. Community leaderboard hosting remains unconfigured.
-
-[Full 7.19 feature notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.0)
+If a run still does not count, [report the issue](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose) with the app version, installed car-pack version, car/track, AC/CSP versions and the outcome or exclusion reason shown below the Setup Test counter.
