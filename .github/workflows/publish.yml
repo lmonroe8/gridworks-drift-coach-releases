@@ -20,7 +20,20 @@ jobs:
         env:
           GH_TOKEN: test-token-never-forward
         run: python3 -m unittest discover -s scripts -p 'test_publish_assets.py' -v
+      - name: Verify public download validation
+        run: python3 -m unittest discover -s scripts -p 'test_public_downloads.py' -v
       - name: Publish checksummed release files
         env:
           GH_TOKEN: ${{ github.token }}
         run: python3 scripts/publish_assets.py
+      - name: Verify every public release download
+        run: python3 scripts/verify_public_downloads.py --plan publish-plan.json --report public-download-verification.json
+      - name: Keep public download verification evidence
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: Gridworks-Public-Download-Verification
+          path: public-download-verification.json
+          if-no-files-found: warn
+          retention-days: 30

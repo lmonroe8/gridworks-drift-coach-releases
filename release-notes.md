@@ -1,60 +1,35 @@
-# Gridworks Drift Coach 7.19.2
+# Gridworks Drift Coach 7.19.5
 
-## Setup Test progress and VDC 6.0
+This release brings the pending Setup Test fixes into the public Windows download and restores the ten-second slide-time requirement for new recordings.
 
-This update repairs Setup Test progress after temporary save or file-read errors, makes each completed run's outcome visible, and updates the garage to identify VDC 6.0 separately from older or unknown installed versions.
+## What changed
 
-### Runs recover after a successful save retry
+- **Entry-speed matching: ±15 mph.** Setup Test allows entries within 15 mph of the first reference run, equivalent to ±24.14016 km/h. A 50 mph reference allows 35–65 mph when the other evidence matches. Collection and repeatability use the same window. Collecting tests recheck saved recordings excluded only by the old speed rule.
+- **Reset Test.** A visible button clears the current experiment, counter, exclusions, recommendation and comparison, including after Stop. Saved runs and setup revisions remain available. Start a new three-run baseline when ready.
+- **Reliable counter recovery.** Eligible runs can count after delayed saves, successful save retries, temporary recording-read failures or a late final setup confirmation. Each run counts once. The page shows counted, saving, checking or an exclusion reason.
+- **VDC 6.0 recognition.** The garage distinguishes the installed car's declared pack version from the current VDC 6.0 reference and uses that car's exposed controls. A changed declared version requests a fresh baseline. Existing VDC 5.0 numbers are not presented as tested 6.0 presets.
+- **At least ten seconds of actual sliding.** New automatic recordings, recovery captures and Setup Test evidence require ten measured qualifying slide seconds before rounding. Elapsed time and straightening/transition gaps do not add slide time. Shorter attempts finish cleanly without creating a new saved result. Existing shorter recordings and their original scores remain readable.
 
-A failed save stays pending while you use **Retry Save**. After the retry succeeds, Setup Test checks the recording again. Temporary file-read errors also remain retryable. Older active tests containing the specific temporary-save exclusion can recover that run without relaxing the evidence requirements.
+Completed scores retain their full ten-second display. Car/track/layout history, separate solo and tandem review with lead/chase information, the quick tablet summary, starter/already-running dashboard activation and final-score voice feedback are preserved. The offline male voice remains available, and saved voice preferences are retained. The online leaderboard remains deferred.
 
-The counter now shows whether the app is **collecting, recording, saving or checking**. The latest completed-run outcome appears directly below it, including an exclusion reason and a link to the saved run when available. A completion refresh arriving during another request is queued, and active collection no longer displays the start-only instruction to park the car.
+## Download and install
 
-The three-run gate, three-second qualifying recording minimum and matching requirements remain in place. A saved run can still be excluded when its evidence or recorded conditions do not meet the test requirements; the visible reason explains that decision.
+Download **Gridworks-Drift-Coach-Setup.zip**, extract it, close Assetto Corsa and run **Gridworks-Setup.exe**. The ZIP contains the installer and START-HERE guide. The installer includes the app's private runtimes and preserves saved driver data and activation.
 
-### The garage recognizes declared VDC 6.0 identity
+Requires Windows 10/11 x64. If Microsoft WebView2 is missing, setup installs it once using an internet connection. Original Assetto Corsa is installed separately. Use Content Manager and CSP for the enhanced car/setup workflow. SimHub supplies the optional native dashboards and overlays.
 
-The garage separates the **installed car's declared version** from the **latest known public pack, VDC 6.0**. It identifies VDC 5.0 as legacy and leaves unknown or conflicting metadata explicit. A generic VDC car name does not automatically become version 6.0.
+Licensing is unchanged: a seven-day full trial, then a $5 USD one-time lifetime license. Existing activation is retained.
 
-Current setup values and available controls come from the installed car. Historical 5.0 targets are not relabeled as validated 6.0 tunes. When the detected pack or car revision changes, the garage refreshes its selection and asks you to recheck the current controls. The previous saved checklist is retained until you save a replacement.
+## Update an existing installation
 
-### Setup Tests retain the pack identity
+Open **App Updates → Check for updates**, download the signed patch, finish driving and choose **Restart to update**. Direct in-app updates are provided for **7.17.0, 7.18.0, 7.19.0, 7.19.1 and 7.19.2**. Use the full installer if your installed version is not supported by a patch.
 
-New tests retain the declared pack/version identity alongside their baseline. A detected change blocks further collection or a cross-version retest and locks the previous proposal until you restore the matching context or start a fresh baseline.
+The optional **Gridworks-Small-Update-7.19.5.zip** is specifically for **7.19.2** installations. It contains the updater and that version's signed patch.
 
-Legacy tests keep their history without being assigned a pack version retrospectively. Start a fresh baseline after changing packs. Identity metadata does not verify that a mod's underlying physics are unchanged.
-
-## Update to 7.19.2
-
-Direct signed app updates support installed **7.17.0, 7.18.0, 7.19.0 and 7.19.1**. The patches retain the existing production trust configuration and reuse the installed runtime. Driver profiles, runs, courses, setups, preferences, trial dates and licenses remain outside the app's version folder.
-
-1. Open **App Updates → Check for updates** and confirm that the offered version is **7.19.2**.
-2. Choose **Download update** if it has not started automatically.
-3. Finish driving, close Assetto Corsa and choose **Restart to update**.
-4. Confirm **7.19.2** after the app restarts.
-
-If the in-app connection is unavailable, the [Small Update ZIP](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.2/Gridworks-Small-Update-7.19.2.zip) supports the same four starting versions. Extract it, close Assetto Corsa and run **Update-Gridworks.cmd**. The `.gwupdate` files are handled by the signed updater.
-
-For a new installation or an **Installer required** notice, use the [all-in-one Windows installer](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.2/Gridworks-Drift-Coach-Setup.zip). Extract the ZIP, open **Gridworks-Drift-Coach** and run **Gridworks-Setup.exe**. The download contains the installer and Start Here guide.
-
-### Components when upgrading from 7.17 or 7.18
-
-After the app restart, close Assetto Corsa, SimHub and Stream Deck. In **App Updates**, choose **Apply component updates**, then explicitly choose **Import Session XL layout**. Reopen Stream Deck and select **Gridworks Session XL** for its two pages. Protected folders may show **Allow Windows permission**. Customized Stream Deck profiles are preserved.
-
-Components already updated for 7.19 need no additional dashboard or Stream Deck profile import for 7.19.2. This patch changes the app and its help.
-
-## The 7.19.1 dashboard-preview repair remains included
-
-Earlier full installers omitted six packaged dashboard-preview files. An app update could then fail with a missing `Dashboard-Preview/Detailed-Dash.json` error before switching versions. The repair carries all six authenticated preview files in supported patches and includes them in new installations. No manual preview-file repair or saved-data deletion is required.
-
-The other 7.19 features remain included: the ten-second result hold, private standings, automatic Track Library, local run clips, two-page Session XL and controlled component updates. Event Director remains separate.
+After the app update, close Assetto Corsa, SimHub and Stream Deck and choose **Apply component updates** if changed native dashboards are offered. This updates the main dashboard's standalone fallback to the ten-second minimum. Existing customized Stream Deck profiles do not need to be imported again.
 
 ## Validation
 
-Release checks passed for the 7.19.2 source tree shared by the release commit and merged main. [Windows desktop CI](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43632572261) passed native WebView2 startup/shutdown, full-installer upgrade, standalone installation and installer packaging; [App checks](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43632572231) also passed. The final local installer ZIP contains exactly the installer and Start Here guide, and its embedded payload and all seven staged release-file checksums match the verified artifacts. Signed-update validation passed all **16 success/rollback scenarios** across **7.17.0, 7.18.0, 7.19.0 and 7.19.1**, using both actual installer staging and explicitly modeled prior-patch origins. Every reconstructed target matched all **253 App files** byte for byte; runtime bytes and saved-data fixtures were preserved. All seven public release downloads were retrieved without authentication and verified against their expected byte counts and SHA-256 checksums after the [publishing workflow](https://github.com/lmonroe8/gridworks-drift-coach-releases/actions/runs/43642683908) passed. The production update feed now offers 7.19.2. [Validation record](validation/7.19.2.json).
+The release is built from source commit `6a09983f96fc8bcb44825846aa4ba965ffc28a81`. Automated checks cover duration boundaries and old-recording compatibility, Reset/Stop/restart, counter recovery, speed boundaries, VDC identity, run endings, score holds, browser interactions and Windows installation. Signed upgrade verification checks complete target-file reconstruction, rollback and preservation of saved-data fixtures for every advertised baseline.
 
-Regression checks cover save failure and retry, recovery of eligible older exclusions, temporarily unreadable recordings, final setup-sample waiting, recorder-to-archive acceptance, duplicate prevention, pack changes with identical raw setup values, legacy journals, blocked cross-version retests, installed-metadata refresh and queued browser refreshes.
-
-Automated checks do not establish live VDC 6.0 handling or physical-rig behavior. Signed-update reconstruction uses explicit process/readiness fixtures; real AC/CSP driving and device testing remain necessary. Scores remain practice estimates.
-
-If a run still does not count, [report the issue](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose) with the app version, installed car-pack version, car/track, AC/CSP versions and the outcome or exclusion reason shown below the Setup Test counter.
+Live Assetto Corsa driving, VDC 6.0 physics and physical SimHub/Stream Deck operation are separate from these automated checks and have not been verified on a driving rig for this release. Download checksums are provided in **SHA256SUMS.txt**.
