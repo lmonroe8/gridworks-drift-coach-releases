@@ -1,0 +1,242 @@
+{
+  "version": "7.19.8",
+  "releaseUrl": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.8",
+  "sourceCommit": "5fd6f93d1cf96fc82291919af4e950a5d099c625",
+  "sourceTree": "0426f1db41cb65009486ec8cf7dce7e87a0ca7ab",
+  "sourceChecks": [
+    {
+      "name": "Native dashboard name fit",
+      "run_id": 44185102657,
+      "head_sha": "5fd6f93d1cf96fc82291919af4e950a5d099c625",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Next-update result integrity and comparison checks",
+      "run_id": 44185102127,
+      "head_sha": "5fd6f93d1cf96fc82291919af4e950a5d099c625",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Tandem end-condition checks",
+      "run_id": 44185102114,
+      "head_sha": "5fd6f93d1cf96fc82291919af4e950a5d099c625",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Leaderboard and dashboard development checks",
+      "run_id": 44185103976,
+      "head_sha": "5fd6f93d1cf96fc82291919af4e950a5d099c625",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Three-run practice and in-app component updates",
+      "run_id": 44185102155,
+      "head_sha": "5fd6f93d1cf96fc82291919af4e950a5d099c625",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Windows desktop build",
+      "run_id": 44185102180,
+      "head_sha": "5fd6f93d1cf96fc82291919af4e950a5d099c625",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "App checks",
+      "run_id": 44185102194,
+      "head_sha": "5fd6f93d1cf96fc82291919af4e950a5d099c625",
+      "status": "completed",
+      "conclusion": "success"
+    }
+  ],
+  "publisherCommit": "6adcdc108a46281ab5282013d166adf806e45185",
+  "publisherRunId": 44190700453,
+  "installerArtifact": {
+    "id": 14374516489,
+    "name": "Gridworks-Standalone-Installer",
+    "bytes": 135630129,
+    "sha256": "6ce0135763dbb76f749ef6752a6ae8dddf50cf5d8a911f9d6bff0c29b954ad46",
+    "workflow_run_id": 44185102180,
+    "head_sha": "5fd6f93d1cf96fc82291919af4e950a5d099c625"
+  },
+  "installerPayload": {
+    "bytes": 135805258,
+    "sha256": "4246452464ff8156a5a8b8ea7cde01a67106d5a2dce5ddd726db5383339ad785",
+    "sourceFilesCompared": 141,
+    "sourceParityPassed": true
+  },
+  "signedUpdateVerification": {
+    "passed": true,
+    "onlineBaselines": [
+      "7.17.0",
+      "7.18.0",
+      "7.19.0",
+      "7.19.1",
+      "7.19.2",
+      "7.19.5",
+      "7.19.6",
+      "7.19.7"
+    ],
+    "offlineBaseline": "7.19.7",
+    "scenariosPassed": 32,
+    "targetAppFiles": 253,
+    "allManifestBasesValidated": true,
+    "runtimePreserved": true,
+    "processAndReadiness": "explicit fixtures",
+    "nativeWindowsSignedRestartTested": false
+  },
+  "offlineUpdateVerification": {
+    "passed": true,
+    "baseline": "7.19.7",
+    "target": "7.19.8",
+    "actualInstallAppPayloadExecuted": true,
+    "actualOfflineVerifierImported": true,
+    "signatureAndPatchVerified": true,
+    "targetAppFilesCompared": 253,
+    "runtimeFilesCompared": 34,
+    "savedFixtureFilesCompared": 11,
+    "installedPointerUnchanged": true,
+    "networkRequestsPerformed": false,
+    "processActivationPerformed": false
+  },
+  "browserVerification": {
+    "actualChromium": true,
+    "syntheticCarAndTelemetry": true,
+    "families": 12,
+    "referenceCards": 24,
+    "checkGroupsPassed": 10,
+    "realChecklistPostRequests": 14,
+    "layoutChecksPassed": 22,
+    "guideApisIntercepted": false,
+    "pageErrors": [],
+    "saveReloadPassed": true,
+    "narrowLayoutPassed": true,
+    "checks": [
+      "An unrecognized synthetic car starts with the choose-reference placeholder, no silently assumed VDC family, and no checklist.",
+      "All 12 selectable families render exactly two numbered cards from the real 24-guide catalog, with recommendations locked and no preset adjustment target.",
+      "wdt-street: manual reference label and scoped sources verified; selection and a checked step saved through /api/action, then preserved by fresh real API reads after page reload.",
+      "arch: manual reference label and scoped sources verified; selection and a checked step saved through /api/action, then preserved by fresh real API reads after page reload.",
+      "lenny-180sx: manual reference label and scoped sources verified; selection and a checked step saved through /api/action, then preserved by fresh real API reads after page reload.",
+      "dcgp: manual reference label and scoped sources verified; selection and a checked step saved through /api/action, then preserved by fresh real API reads after page reload.",
+      "instyle: manual reference label and scoped sources verified; selection and a checked step saved through /api/action, then preserved by fresh real API reads after page reload.",
+      "At 650 px the reference cards stack in one column; the document and reference text/controls have no horizontal overflow. The parameter table retains its contained horizontal scroll.",
+      "DCGP metadata is read from the temporary demo car through the real Garage API: Season 12 is distinct from reviewed Season 13; season and declared car revision changes require fresh checks, preserve previous saved records, and accept explicit saves that survive page reload.",
+      "An S13 car model never supplies an installed season. Conflicting explicit season labels are shown as conflicting, with no assumed Season 13 installation."
+    ],
+    "artifactId": 14373911833,
+    "artifactSha256": "f79301cf86e13e84090b88f56bdbe9a69b16f1aade907a96111ffa0d56828368",
+    "workflowRunId": 44185102155,
+    "screenshotsVisuallyInspected": 3,
+    "liveAssettoCorsaTested": false
+  },
+  "publicDownloads": {
+    "passed": true,
+    "assetCount": 11,
+    "unauthenticated": true,
+    "proofArtifactId": 14376282403,
+    "proof": "7.19.8-public-downloads.json",
+    "independentInstallerDownload": {
+      "name": "Gridworks-Drift-Coach-Setup.zip",
+      "bytes": 135849824,
+      "sha256": "a429a679bddb5a3c2da85782ea59dbed3932b6c7073e9984f409da126e7df96e",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-Drift-Coach-Setup.zip",
+      "verified": true
+    }
+  },
+  "feed": {
+    "path": "updates/stable-recovery/latest.json",
+    "version": "7.19.8",
+    "channel": "stable",
+    "sha256": "a99c3e26be1576b5f112124283fae2acd35253f4a1e8e2dc6e4d26c787490c77",
+    "signatureVerified": true,
+    "allPackageUrlsMatchVerifiedAssets": true,
+    "advancedOnlyAfterPublicVerification": true,
+    "commercePreserved": true
+  },
+  "assets": [
+    {
+      "name": "Gridworks-Drift-Coach-Setup.zip",
+      "bytes": 135849824,
+      "sha256": "a429a679bddb5a3c2da85782ea59dbed3932b6c7073e9984f409da126e7df96e",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-Drift-Coach-Setup.zip",
+      "verified": true
+    },
+    {
+      "name": "Gridworks-7.17.0-to-7.19.8.gwupdate",
+      "bytes": 26527151,
+      "sha256": "11516e4f0d93e768273958654f18e9fa6b3a193c8f507fa38edd00626c729a22",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-7.17.0-to-7.19.8.gwupdate",
+      "verified": true
+    },
+    {
+      "name": "Gridworks-7.18.0-to-7.19.8.gwupdate",
+      "bytes": 26503764,
+      "sha256": "6f8989f05ef97edb113dc9b103285942e4aac5c3d6e17d54424f153c58017bf0",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-7.18.0-to-7.19.8.gwupdate",
+      "verified": true
+    },
+    {
+      "name": "Gridworks-7.19.0-to-7.19.8.gwupdate",
+      "bytes": 25069510,
+      "sha256": "fb26ebb7cb14a4979c90c44c6edf0b7f06491d60e4086df4170a48fb7e308bc6",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-7.19.0-to-7.19.8.gwupdate",
+      "verified": true
+    },
+    {
+      "name": "Gridworks-7.19.1-to-7.19.8.gwupdate",
+      "bytes": 25069510,
+      "sha256": "3a2e85f1b958c3f9891b9c148a6afd47c3eb8dece470c06cec2bd487a143b0da",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-7.19.1-to-7.19.8.gwupdate",
+      "verified": true
+    },
+    {
+      "name": "Gridworks-7.19.2-to-7.19.8.gwupdate",
+      "bytes": 24991117,
+      "sha256": "ae1cc0494fc8e3b86b08e099c57513fa1d1fcaa83f000b292859518e86ba2ece",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-7.19.2-to-7.19.8.gwupdate",
+      "verified": true
+    },
+    {
+      "name": "Gridworks-7.19.5-to-7.19.8.gwupdate",
+      "bytes": 18521242,
+      "sha256": "7da339b792c156875cdb7fb718ec12a1910008399703765f1229e1cc63f54f55",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-7.19.5-to-7.19.8.gwupdate",
+      "verified": true
+    },
+    {
+      "name": "Gridworks-7.19.6-to-7.19.8.gwupdate",
+      "bytes": 18499315,
+      "sha256": "1b55014f379e7dbde6e3e467b0fef662fcf2d1569419b81f3877a3565664204e",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-7.19.6-to-7.19.8.gwupdate",
+      "verified": true
+    },
+    {
+      "name": "Gridworks-7.19.7-to-7.19.8.gwupdate",
+      "bytes": 18487392,
+      "sha256": "acd380a463fc23ba1fe0cf3ef4f687178f33b5b58476e3dab8237c9739cc063b",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-7.19.7-to-7.19.8.gwupdate",
+      "verified": true
+    },
+    {
+      "name": "Gridworks-Small-Update-7.19.8.zip",
+      "bytes": 18501616,
+      "sha256": "abae6b345eae75dc76fc7b719a79c1c85cccacfc508646d453273c41f5bb4249",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-Small-Update-7.19.8.zip",
+      "verified": true
+    },
+    {
+      "name": "SHA256SUMS.txt",
+      "bytes": 1014,
+      "sha256": "57c9a062bfd809ea865c033dfb1c98294f29f267d811dd54f7b4ad6d1c2616e7",
+      "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/SHA256SUMS.txt",
+      "verified": true
+    }
+  ],
+  "liveAssettoCorsaAndPhysicalRigTested": false,
+  "scope": "Native Windows build/install and browser CI, actual offline verifier preparation, signed update reconstruction with explicit readiness fixtures, and unauthenticated downloads. Live driving with each third-party pack and physical rig remains separate."
+}

@@ -1,18 +1,18 @@
 # Gridworks Drift Coach
 
-**Production release · version 7.19.7**
+**Production release · version 7.19.8**
 
 A standalone Windows app for original Assetto Corsa drift practice, tandem analysis, setup work, saved run review and a paired tablet display. Use Content Manager and CSP for the full car/setup workflow; SimHub is optional for native dashboards and overlays.
 
-[Download the 7.19.7 all-in-one Windows installer](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.7/Gridworks-Drift-Coach-Setup.zip) · [Full release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.7)
+[Download the 7.19.8 all-in-one Windows installer](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-Drift-Coach-Setup.zip) · [Full release notes](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.8)
 
 ## Update from inside the app
 
-The signed online update supports these exact installed builds: **7.17.0, 7.18.0, 7.19.0, 7.19.1, 7.19.2, 7.19.5 and 7.19.6**. They can update directly to **7.19.7** through **App Updates**. Signed patches reuse the installed runtime and retain the earlier dashboard-preview repair.
+The signed online update supports these exact installed builds: **7.17.0, 7.18.0, 7.19.0, 7.19.1, 7.19.2, 7.19.5, 7.19.6 and 7.19.7**. They can update directly to **7.19.8** through **App Updates**. Signed patches reuse the installed runtime and retain the earlier dashboard-preview repair.
 
 1. Open **App Updates → Check for updates**. Choose **Download update** if it has not started automatically.
 2. Finish driving, close Assetto Corsa and choose **Restart to update** when ready.
-3. Confirm **7.19.7**, then check **Installed dashboards and controls** in App Updates.
+3. Confirm **7.19.8**, then check **Installed dashboards and controls** in App Updates.
 4. If component updates are offered, close Assetto Corsa, SimHub and Stream Deck, then choose **Apply component updates**. These verified files are included in the download; protected folders may show **Allow Windows permission**.
 5. To add the two-page controls, choose **Import Session XL layout**, reopen Stream Deck and select **Gridworks Session XL**. Profile import is explicit; existing customized profiles are preserved.
 
@@ -22,13 +22,13 @@ Components already current do not need another import. Normal upgrades preserve 
 
 Download **Gridworks-Drift-Coach-Setup.zip**, extract it, open the **Gridworks-Drift-Coach** folder and run **Gridworks-Setup.exe**. Setup starts automatically. The ZIP contains exactly the installer and **START-HERE.html**.
 
-### Offline update from 7.19.6 only
+### Offline update from 7.19.7 only
 
-The [Small Update ZIP for 7.19.7](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.7/Gridworks-Small-Update-7.19.7.zip) supports an installed **7.19.6 only**. Extract it, close Assetto Corsa and run **Update-Gridworks.cmd**. Other supported versions should use App Updates or the full installer. The separate `.gwupdate` assets are handled by the app's signed updater.
+The [Small Update ZIP for 7.19.8](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/Gridworks-Small-Update-7.19.8.zip) supports an installed **7.19.7 only**. Extract it, close Assetto Corsa and run **Update-Gridworks.cmd**. Other supported versions should use App Updates or the full installer. The separate `.gwupdate` assets are handled by the app's signed updater.
 
-## New in 7.19.7: pack and physics references
+## New in 7.19.8: DCGP Season 13
 
-The Setup Library contains **11 families and 22 parameter-reference cards**. Open **Garage → Setup Lab → Gridworks Setup Library** to inspect the car you are driving.
+The Setup Library contains **12 families and 24 parameter-reference cards**. Open **Garage → Setup Lab → Gridworks Setup Library** to inspect the car you are driving.
 
 | Reference | Coverage |
 | --- | --- |
@@ -43,6 +43,9 @@ The Setup Library contains **11 families and 22 parameter-reference cards**. Ope
 | Arch Physics | Explicit physics attribution and donor-specific declared revisions, including dated revision text. |
 | Lenny's 180SX | Specific Type-X / Drift donor identities and declared Arch revisions. A generic 180SX name does not identify this model. |
 | Instyle / manual reference | Available for manual selection. Its exact creator identity remains unverified; it is not automatically mapped to N-Style or another pack. |
+| DCGP / Drift Corner Grand Prix | Season 13 (S13), updated 11 November 2026. Explicit pack season and individual car revision remain distinct. |
+
+The [official DCGP Downloads page](https://driftcornergp.com/page/20-downloads), checked 17 November 2026, identifies the reference as **Season 13 (S13), updated 11 November 2026**. Explicit season labels and `dcgp_13_<car>` folders can identify the pack season. A Nissan S13 model name or old `dcgp_s13` folder cannot establish Season 13; a car revision such as `1.0` does not mean Season 1. A changed season or revision requests a checklist recheck and a fresh Setup Test baseline while preserving the previous saved record.
 
 The app distinguishes the installed car's declared identity from the reviewed reference and shows sources for the selected family. An unrecognized car asks you to choose a reference; a saved valid reference restores. Original guide and checklist-step identifiers remain available. A changed declared version, family or physics credit can request a recheck while preserving the previous saved record.
 
@@ -52,7 +55,7 @@ The cards explain parameters and show the actual car's reported controls. They d
 
 Save and select a complete direct CSP setup capture, then start the baseline while parked before driving. Collect three original, fully saved live solo runs with the same confirmed setup, car, track, layout, compound and training settings. Recommendations stay locked at 0/3, 1/3 and 2/3. At 3/3 the app reviews the evidence; inconsistent inputs or missing mechanical evidence can still leave an adjustment unproposed.
 
-The wider **7.19.6 matching rules remain in 7.19.7**:
+The wider **7.19.6 matching rules remain in 7.19.8**:
 
 | Requirement | Matching window |
 | --- | --- |
@@ -129,36 +132,36 @@ The tablet shows driving information, a quick latest-run summary and short setup
 
 ## Guides and earlier releases
 
-Use installed **7.19.7** guides and page Help for current features. **Setups-and-Run-Review.md** covers the expanded references and recording policy; **Practice-and-Updates-719.md** explains Setup Test and component updates.
+Use installed **7.19.8** guides and page Help for current features. **Setups-and-Run-Review.md** covers the expanded references and recording policy; **Practice-and-Updates-719.md** explains Setup Test and component updates.
 
 The older [49-page visual manual](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Visual_Instruction_Manual.pdf) and [screenshot pack](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.14.0/Gridworks_Drift_Coach_7.14_Screenshot_Pack.zip) remain available as **7.14 references**, not current manuals. Their screenshots use demonstration data and native-template previews.
 
-Earlier release notes: [7.19.6](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.6), [7.19.5](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.5), [7.19.2](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.2), [7.19.1](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.1), [7.19](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.0), [7.18](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.18.0), [7.17](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.17.0), [7.16](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.16.0), [7.15](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.15.0), [7.14](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.14.0).
+Earlier release notes: [7.19.7](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.7), [7.19.6](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.6), [7.19.5](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.5), [7.19.2](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.2), [7.19.1](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.1), [7.19](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.0), [7.18](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.18.0), [7.17](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.17.0), [7.16](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.16.0), [7.15](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.15.0), [7.14](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.14.0).
 
 ## Support and validation
 
 [Report an issue or suggest a feature](https://github.com/lmonroe8/gridworks-drift-coach-releases/issues/new/choose). Include the app version, car/track, installed car-pack version, AC/CSP versions, display/browser and reproduction steps. For a Setup Test issue, include the outcome or exclusion reason shown beside the counter.
 
-All seven source workflows passed for **7.19.7**:
+All seven source workflows passed for **7.19.8**:
 
 | Source workflow | Verified run |
 | --- | --- |
-| App checks | [43995620511](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43995620511) |
-| Three-run practice and in-app component updates | [43995620529](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43995620529) |
-| Windows desktop build | [43995620543](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43995620543) |
-| Leaderboard and dashboard development checks | [43995620627](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43995620627) |
-| Native dashboard name fit | [43995620540](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43995620540) |
-| Tandem end-condition checks | [43995620566](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43995620566) |
-| Next-update result integrity and comparison checks | [43995620553](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/43995620553) |
+| App checks | [44185102194](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/44185102194) |
+| Three-run practice and in-app component updates | [44185102155](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/44185102155) |
+| Windows desktop build | [44185102180](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/44185102180) |
+| Leaderboard and dashboard development checks | [44185103976](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/44185103976) |
+| Native dashboard name fit | [44185102657](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/44185102657) |
+| Tandem end-condition checks | [44185102114](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/44185102114) |
+| Next-update result integrity and comparison checks | [44185102127](https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/44185102127) |
 
-The source repository and its workflow logs are private; the [public validation record](validation/7.19.7.json) records the release evidence. Windows checks cover native WebView2 startup/shutdown, full-installer upgrade, standalone installation and installer packaging. Actual Chromium checks exercise pack-reference rendering, real checklist save/reload requests and narrow layouts with synthetic car fixtures.
+The source repository and its workflow logs are private; the [public validation record](validation/7.19.8.json) records the release evidence. Windows checks cover native WebView2 startup/shutdown, full-installer upgrade, standalone installation and installer packaging. Actual Chromium checks exercise pack-reference rendering, real checklist save/reload requests and narrow layouts with synthetic car fixtures.
 
-Signed-update verification passed all **28 success/rollback scenarios** across the seven exact online baselines listed above, using both actual installer staging and explicitly modeled prior-patch origins. Each reconstructed target is checked against the complete App inventory, with runtime bytes and saved-data fixtures preserved. The installer ZIP contains exactly **Gridworks-Setup.exe** and **START-HERE.html** inside its folder, with the embedded payload matched to the verified build.
+Signed-update verification passed all **32 success/rollback scenarios** across the eight exact online baselines listed above, using both actual installer staging and explicitly modeled prior-patch origins. Each reconstructed target is checked against the complete App inventory, with runtime bytes and saved-data fixtures preserved. The installer ZIP contains exactly **Gridworks-Setup.exe** and **START-HERE.html** inside its folder, with the embedded payload matched to the verified build.
 
-The release has **10 assets**: the full installer ZIP, seven direct `.gwupdate` patches, the 7.19.6-only offline update ZIP and [SHA256SUMS.txt](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.7/SHA256SUMS.txt). The [publishing workflow](https://github.com/lmonroe8/gridworks-drift-coach-releases/actions/runs/43997956491) publishes the staged files. The production feed now offers **7.19.7** after all ten public release assets were downloaded without authentication and verified against their expected byte counts and SHA-256 checksums.
+The release has **11 assets**: the full installer ZIP, eight direct `.gwupdate` patches, the 7.19.7-only offline update ZIP and [SHA256SUMS.txt](https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.8/SHA256SUMS.txt). The [publishing workflow](https://github.com/lmonroe8/gridworks-drift-coach-releases/actions/runs/44190700453) publishes the staged files. The production feed now offers **7.19.8** after all eleven public release assets were downloaded without authentication and verified against their expected byte counts and SHA-256 checksums.
 
-Source commit: `5d30ced87db409eda3563a3c8e1f3c762a1af9a2`  
-Source tree: `e968307fa76f6754fa6c97c27b8359fa922f3980`
+Source commit: `5fd6f93d1cf96fc82291919af4e950a5d099c625`  
+Source tree: `0426f1db41cb65009486ec8cf7dce7e87a0ca7ab`
 
 **Automated checks do not establish live handling or physical-rig behavior for every third-party pack or physics revision.** Real Assetto Corsa/CSP driving and device testing remain separate checks. Signed-update reconstruction uses explicit process/readiness fixtures; scores remain practice estimates.
 
