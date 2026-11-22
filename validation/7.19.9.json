@@ -148,12 +148,141 @@
     "target_and_saved_data_verified": true
   },
   "public_downloads": {
-    "status": "pending_publisher_verification",
-    "required_before_feed_activation": true,
-    "expected_assets": 12
+    "status": "passed",
+    "workflow_run_id": 45083202554,
+    "workflow_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/actions/runs/45083202554",
+    "report": {
+      "passed": true,
+      "verified_at": "2026-11-22T23:27:12.187115+00:00",
+      "repository": "lmonroe8/gridworks-drift-coach-releases",
+      "version": "7.19.9",
+      "tag": "v7.19.9",
+      "release_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/tag/v7.19.9",
+      "public_non_draft": true,
+      "unauthenticated_requests": true,
+      "credential_headers_used": false,
+      "assets": [
+        {
+          "name": "Gridworks-Drift-Coach-Setup.zip",
+          "bytes": 135860054,
+          "sha256": "6be7810007b507b690dc7755e6b326bdf9204c0569285ccd51270f91f66b995f",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-Drift-Coach-Setup.zip",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-7.17.0-to-7.19.9.gwupdate",
+          "bytes": 26537113,
+          "sha256": "79809fbfe6ec5e3b08deb3b4375a1a7964fdaeebd8f9ece7bb3dead092993754",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-7.17.0-to-7.19.9.gwupdate",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-7.18.0-to-7.19.9.gwupdate",
+          "bytes": 26513726,
+          "sha256": "a4afc5b547910a36e7ad23f22e73515164e41b325b8cef3abb55b74d686ee486",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-7.18.0-to-7.19.9.gwupdate",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-7.19.0-to-7.19.9.gwupdate",
+          "bytes": 25092989,
+          "sha256": "9b91d71a85fb4e033e4ac1c2dd59a1672c75f7656fe2daca2248a6bbad4e5089",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-7.19.0-to-7.19.9.gwupdate",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-7.19.1-to-7.19.9.gwupdate",
+          "bytes": 25092989,
+          "sha256": "88421c32973071ed46610453926b600dad4b41c7378d9424648d7df13b97d73a",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-7.19.1-to-7.19.9.gwupdate",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-7.19.2-to-7.19.9.gwupdate",
+          "bytes": 25020565,
+          "sha256": "54b46cda332158a3cb924cc7530123e5a7db1e9fc7465df314525d5714ab0190",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-7.19.2-to-7.19.9.gwupdate",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-7.19.5-to-7.19.9.gwupdate",
+          "bytes": 18579488,
+          "sha256": "4e75992d3501e36773d67e7412c4ffaa6bd3a17b726eb766a5edacf21e1c158a",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-7.19.5-to-7.19.9.gwupdate",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-7.19.6-to-7.19.9.gwupdate",
+          "bytes": 18579488,
+          "sha256": "6d3f80debd96dde1138d49ed29880549768ffe5b90c27d11caffb5dcd208a3b9",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-7.19.6-to-7.19.9.gwupdate",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-7.19.7-to-7.19.9.gwupdate",
+          "bytes": 18567565,
+          "sha256": "ffa50ff7e8631bd86596e347b87c8a107265e351d55daa4eb44df8d03fb2b96d",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-7.19.7-to-7.19.9.gwupdate",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-7.19.8-to-7.19.9.gwupdate",
+          "bytes": 18567565,
+          "sha256": "f435678137563e4337f24488597a36d081ca3528e959303db90cb8558f62e0d5",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-7.19.8-to-7.19.9.gwupdate",
+          "verified": true
+        },
+        {
+          "name": "Gridworks-Small-Update-7.19.9.zip",
+          "bytes": 18581804,
+          "sha256": "5459e051bdfc3653be6e7144c885e685ba1a912b813db66e420b13b3b251c68b",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/Gridworks-Small-Update-7.19.9.zip",
+          "verified": true
+        },
+        {
+          "name": "SHA256SUMS.txt",
+          "bytes": 1116,
+          "sha256": "6261b8a564b449355bfb0ca58fd91c311f84affe064df65d3faa344e5014e73d",
+          "public_url": "https://github.com/lmonroe8/gridworks-drift-coach-releases/releases/download/v7.19.9/SHA256SUMS.txt",
+          "verified": true
+        }
+      ],
+      "total_bytes": 356994462,
+      "details": {
+        "installer": {
+          "version": "7.19.9",
+          "x64": true,
+          "two_member_zip": true,
+          "payload_bytes": 135815197,
+          "payload_sha256": "82fe8474f46bb79ee97de23d5b45be5f2b289f53a6c6ac5e8a5c3c8fb2827f93",
+          "bundle_and_app_versions_match": true,
+          "executed": false
+        },
+        "offline_update": {
+          "safe_members": true,
+          "embedded_patches_verified": [
+            "Gridworks-7.19.8-to-7.19.9.gwupdate"
+          ],
+          "manifest_version": "7.19.9",
+          "executed": false
+        }
+      },
+      "downloaded_code_executed": false,
+      "release_modified": false,
+      "feed_advanced": false
+    }
   },
   "limitations": [
     "Signed preparation/activation uses explicit process and readiness fixtures on POSIX; native Windows build and installer checks are recorded separately.",
     "Live Assetto Corsa/CSP driving and physical SimHub/rig validation are not claimed."
-  ]
+  ],
+  "update_feed": {
+    "path": "updates/stable-recovery/latest.json",
+    "version": "7.19.9",
+    "manifest_sha256": "a6e1e94aca44ec9f4390209eab5589d91dcbe6e313e189ee2903f0ca6166aeea",
+    "key_id": "gridworks-updates-2026-10-recovery",
+    "signature_verified": true,
+    "commerce_preserved": true,
+    "published_with_this_record": true
+  }
 }
