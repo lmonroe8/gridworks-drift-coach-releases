@@ -1,0 +1,159 @@
+{
+  "schema": 1,
+  "version": "7.19.9",
+  "checked_at": "2026-11-22T23:25:12.895513+00:00",
+  "source_commit": "467657ee9cd9036e4970f9d67250b214df474895",
+  "source_tree": "44e7447399bfaa3103c956283a5b6de2c9140d99",
+  "source_checks": [
+    {
+      "name": "App checks",
+      "run_id": 45067607317,
+      "url": "https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/45067607317",
+      "conclusion": "success"
+    },
+    {
+      "name": "Three-run practice and in-app component updates",
+      "run_id": 45067607316,
+      "url": "https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/45067607316",
+      "conclusion": "success"
+    },
+    {
+      "name": "Windows desktop build",
+      "run_id": 45067607301,
+      "url": "https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/45067607301",
+      "conclusion": "success"
+    },
+    {
+      "name": "Leaderboard and dashboard development checks",
+      "run_id": 45067607340,
+      "url": "https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/45067607340",
+      "conclusion": "success"
+    },
+    {
+      "name": "Native dashboard name fit",
+      "run_id": 45067607276,
+      "url": "https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/45067607276",
+      "conclusion": "success"
+    },
+    {
+      "name": "Tandem end-condition checks",
+      "run_id": 45067607243,
+      "url": "https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/45067607243",
+      "conclusion": "success"
+    },
+    {
+      "name": "Next-update result integrity and comparison checks",
+      "run_id": 45067607236,
+      "url": "https://github.com/lmonroe8/gridworks-drift-coach/actions/runs/45067607236",
+      "conclusion": "success"
+    }
+  ],
+  "installer": {
+    "bytes": 135860054,
+    "sha256": "6be7810007b507b690dc7755e6b326bdf9204c0569285ccd51270f91f66b995f",
+    "payload_bytes": 135815197,
+    "payload_sha256": "82fe8474f46bb79ee97de23d5b45be5f2b289f53a6c6ac5e8a5c3c8fb2827f93",
+    "source_files_verified": 478,
+    "source_to_payload_comparisons": 138,
+    "runtime_checksum_verified": true,
+    "private_material_excluded": true
+  },
+  "signed_updates": {
+    "passed": true,
+    "manifest_sha256": "a6e1e94aca44ec9f4390209eab5589d91dcbe6e313e189ee2903f0ca6166aeea",
+    "target_app_files": 254,
+    "scenario_count": 36,
+    "baselines": [
+      {
+        "version": "7.17.0",
+        "baseline_payload_sha256": "819af9fc46db7a5e5313304cc70025b8d5e55b20156bb29db13a9fa3ac67481c",
+        "patch_sha256": "79809fbfe6ec5e3b08deb3b4375a1a7964fdaeebd8f9ece7bb3dead092993754",
+        "patch_bytes": 26537113,
+        "scenarios": 4,
+        "runtime_unchanged": true
+      },
+      {
+        "version": "7.18.0",
+        "baseline_payload_sha256": "2cca9d6fe83e3681ee7dfe1b40a60583656df2aadaf21a6a06b72be889b42e2d",
+        "patch_sha256": "a4afc5b547910a36e7ad23f22e73515164e41b325b8cef3abb55b74d686ee486",
+        "patch_bytes": 26513726,
+        "scenarios": 4,
+        "runtime_unchanged": true
+      },
+      {
+        "version": "7.19.0",
+        "baseline_payload_sha256": "a89780a9da62c916980284a493958afb0a74eb707af2ea488c0280f298d22e26",
+        "patch_sha256": "9b91d71a85fb4e033e4ac1c2dd59a1672c75f7656fe2daca2248a6bbad4e5089",
+        "patch_bytes": 25092989,
+        "scenarios": 4,
+        "runtime_unchanged": true
+      },
+      {
+        "version": "7.19.1",
+        "baseline_payload_sha256": "eca95947204991627c6aea4d41b765a40ff511307c0a1c5593209c4130fd1039",
+        "patch_sha256": "88421c32973071ed46610453926b600dad4b41c7378d9424648d7df13b97d73a",
+        "patch_bytes": 25092989,
+        "scenarios": 4,
+        "runtime_unchanged": true
+      },
+      {
+        "version": "7.19.2",
+        "baseline_payload_sha256": "ad11ca6c73ff148fbacde3cdb04de3dcfc2f3b9b01e688bd4a1c132107a35aba",
+        "patch_sha256": "54b46cda332158a3cb924cc7530123e5a7db1e9fc7465df314525d5714ab0190",
+        "patch_bytes": 25020565,
+        "scenarios": 4,
+        "runtime_unchanged": true
+      },
+      {
+        "version": "7.19.5",
+        "baseline_payload_sha256": "f58445c7c206b61292996626602b030204c996cbdc75a37703bc1e1225913794",
+        "patch_sha256": "4e75992d3501e36773d67e7412c4ffaa6bd3a17b726eb766a5edacf21e1c158a",
+        "patch_bytes": 18579488,
+        "scenarios": 4,
+        "runtime_unchanged": true
+      },
+      {
+        "version": "7.19.6",
+        "baseline_payload_sha256": "86b69c85b375f61917f51d1bb997f1494fe2f6877b9149b329b2628e3f1b9418",
+        "patch_sha256": "6d3f80debd96dde1138d49ed29880549768ffe5b90c27d11caffb5dcd208a3b9",
+        "patch_bytes": 18579488,
+        "scenarios": 4,
+        "runtime_unchanged": true
+      },
+      {
+        "version": "7.19.7",
+        "baseline_payload_sha256": "430d00e4b269d0991b20fa772ac132add2acda9bda9755956a6ded0e05fb4556",
+        "patch_sha256": "ffa50ff7e8631bd86596e347b87c8a107265e351d55daa4eb44df8d03fb2b96d",
+        "patch_bytes": 18567565,
+        "scenarios": 4,
+        "runtime_unchanged": true
+      },
+      {
+        "version": "7.19.8",
+        "baseline_payload_sha256": "4246452464ff8156a5a8b8ea7cde01a67106d5a2dce5ddd726db5383339ad785",
+        "patch_sha256": "f435678137563e4337f24488597a36d081ca3528e959303db90cb8558f62e0d5",
+        "patch_bytes": 18567565,
+        "scenarios": 4,
+        "runtime_unchanged": true
+      }
+    ],
+    "saved_data_fixtures_preserved": true,
+    "scope": "Actual installer App staging and signed preparation with byte comparisons; prior-patch origin, process/readiness and user-data records are explicit fixtures"
+  },
+  "offline_update": {
+    "passed": true,
+    "from_version": "7.19.8",
+    "sha256": "5459e051bdfc3653be6e7144c885e685ba1a912b813db66e420b13b3b251c68b",
+    "manifest_and_patch_match_online": true,
+    "target_and_saved_data_verified": true
+  },
+  "public_downloads": {
+    "status": "pending_publisher_verification",
+    "required_before_feed_activation": true,
+    "expected_assets": 12
+  },
+  "limitations": [
+    "Signed preparation/activation uses explicit process and readiness fixtures on POSIX; native Windows build and installer checks are recorded separately.",
+    "Live Assetto Corsa/CSP driving and physical SimHub/rig validation are not claimed."
+  ]
+}
